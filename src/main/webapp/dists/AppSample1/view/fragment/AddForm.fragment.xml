@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition id="AddForm" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog title="{appView>/CreateEditSurveyTitle}" afterClose="onAfterCloseDialog" draggable="true">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:Form editable="true" busy="{oViewModel>/busy}">
+					<f:layout>
+						<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+							emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+					</f:layout>
+					<f:formContainers>
+						<f:FormContainer>
+							<f:formElements>
+								<f:FormElement label="{i18n>Name}">
+									<f:fields>
+										<Input id="titleId" value="{path: 'oFragViewModel>/Name', type : 'sap.ui.model.type.String' , constraints:{minLength : 1} }" enabled="true"
+											fieldGroupIds="fieldGroupItem" liveChange="onCreateFormTitleLiveChange"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement>
+									<f:label>
+										<Label text="{i18n>Icon}" width="100%" textAlign="Begin" textDirection="Inherit"/>
+									</f:label>
+									<f:fields>
+										<core:Icon src="{oFragViewModel>/IconSrc}" size="80px" tooltip="{i18n>Icon}" press="onIconPress"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement label="{i18n>ValidFrom}">
+									<f:fields>
+										<DateTimePicker id="startDateTime" placeholder="{i18n>startDatePlaceHolder}" change="onStartDateChange"
+											value="{path: 'oFragViewModel>/ValidFrom', type: 'sap.ui.model.type.DateTime'}" valueStateText="{i18n>startDateValidation}"
+											valueState="{parts: [{path: 'oFragViewModel>/ValidFrom'}, {path: 'oFragViewModel>/ValidTo'}, {path: 'appView>/datesChanged'}], formatter: '.formatter.checkStartDate'}"/>
+										<DateTimePicker id="endDateTime" placeholder="{i18n>endDatePlaceHolder}" change="onEndDateChange"
+											value="{path: 'oFragViewModel>/ValidTo', type: 'sap.ui.model.type.DateTime'}" valueStateText="{i18n>endDateValidation}"
+											valueState="{parts: [{path: 'oFragViewModel>/ValidFrom'}, {path: 'oFragViewModel>/ValidTo'}, {path: 'appView>/datesChanged'}], formatter: '.formatter.checkEndDate'}"/>
+									</f:fields>
+								</f:FormElement>
+								<f:FormElement label="{i18n>statePublic}">
+									<f:fields>
+										<Switch state="{oFragViewModel>/Universal}" />
+									</f:fields>
+								</f:FormElement>
+							</f:formElements>
+						</f:FormContainer>
+					</f:formContainers>
+				</f:Form>
+			</VBox>
+		</content>
+		<beginButton>
+			<Button id="SaveBtnId" type="Emphasized" text="{i18n>BtnSave}" press="onSaveForm"/>
+		</beginButton>
+		<endButton>
+			<Button text="{i18n>BtnClose}" press="onCancelForm"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,1 @@
+sap.ui.define(["./BaseController"],function(t){"use strict";return t.extend("com.mjzsoft.QuestionnaireStatistics.controller.DetailObjectNotFound",{})});

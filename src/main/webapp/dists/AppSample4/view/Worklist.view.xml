@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic" controllerName="com.mjzsoft.Survey.controller.Worklist"
+	xmlns:layout="sap.ui.layout">
+	<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false" class="sapUiNoContentPadding">
+		<semantic:titleHeading class="sapUiNoContentPadding">
+			<Title text="{ parts: [{ path: 'i18n>OverviewSurvey'}, {path: 'viewModel>/UserName'}]}" level="H2"/>
+		</semantic:titleHeading>
+		<semantic:content>
+			<ScrollContainer id="scrollBar" class="myContainer" height="100%" width="100%" horizontal="true" vertical="true" focusable="true">
+				<FlexBox wrap="Wrap" id="flexBox" visible="{viewModel>/flexBoxVisible}" direction="Row" justifyContent="Center"
+					items="{ path: '/SurveySet', events: { dataRequested: '.onFormsRequested', dataReceived: '.onFormsReceived' }, filters: [{ path: 'UserId', operator: 'EQ', value1: '0' }], parameters: {expand: 'Form, User, Form/Icon,Form/Questions,Form/Questions/Answers'}}">
+					<GenericTile headerImage="{Form/Icon/Source}" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" press="onPress"
+						header="{Form/Name}">
+						<TileContent
+							footer="{ parts:[ { path: 'DoneAt'}, {path: 'Form/ValidFrom'}, {path: 'Form/ValidTo'}, {path: 'UserId'}], formatter: 'com.mjzsoft.Survey.model.individualFormatter.formatTileFooter'}"
+							footerColor="{parts:[ { path: 'DoneAt'}, {path: 'Form/ValidFrom'}, {path: 'Form/ValidTo'}, {path: 'UserId'}], formatter: 'com.mjzsoft.Survey.model.individualFormatter.formatTileState'}">
+							<content>
+								<HBox>
+									<VBox visible="{=${DoneAt} !== null}">
+										<Text
+											text="{parts:[{path: 'i18n>txtFinishedAt'}, { path:'DoneAt', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium' }}] }"/>
+									</VBox>
+									<VBox visible="{=${DoneAt} === null}">
+										<Text
+											text="{ parts: [ {path: 'i18n>txtOpensAt'}, {path: 'Form/ValidFrom'}, {path:'Form/ValidTo'}, {path: 'UserId'}], formatter: 'com.mjzsoft.Survey.model.individualFormatter.formatTileClosed'}"/>
+									</VBox>
+								</HBox>
+							</content>
+						</TileContent>
+					</GenericTile>
+				</FlexBox>
+			</ScrollContainer>
+		</semantic:content>
+	</semantic:SemanticPage>
+</mvc:View>

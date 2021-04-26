@@ -1,0 +1,15 @@
+.successDate {
+    color: #0099CC !important;
+}
+
+.doneDate {
+    color: #2B5E1C !important;
+}
+
+.openDate {
+    color: orange !important;
+}
+
+.closedDate {
+    color: red !important;
+}

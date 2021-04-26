@@ -1,0 +1,289 @@
+{
+	"services": {
+		"LaunchPage": {
+			"adapter": {
+				"config": {
+					"catalogs": [{
+						"id": "main_catalog",
+						"title": "کاتالوگ برنامه های اصلی",
+						"tiles": [{
+							"id": "toapp_ask_builder",
+							"title": "برنامه نمونه ۱",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_00",
+								"title": "برنامه نمونه ۱",
+								"info": "اطلاعات اضافه ۱",
+								"infoState": "Positive",
+								"numberValue": 1,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "عنوان ۱",
+								"icon": "sap-icon://attachment-text-file",
+								"targetURL": "#Action-toapp_ask_builder"
+							}
+						}, {
+							"id": "toapp_ask_userSurvey",
+							"title": "Surveys Assignment",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_01",
+								"title": "Surveys Assignment",
+								"info": "Bind surveys to users",
+								"infoState": "Positive",
+								"numberValue": 3,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Assign surveys",
+								"icon": "sap-icon://visits",
+								"targetURL": "#Action-toapp_ask_userSurvey"
+							}
+						}, {
+							"id": "toapp_ask_survey",
+							"title": "Your Surveys",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_02",
+								"title": "Your Surveys",
+								"info": "Do your surveys",
+								"infoState": "Positive",
+								"numberValue": 4,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Do your surveys",
+								"icon": "sap-icon://survey",
+								"targetURL": "#Action-toapp_ask_survey"
+							}
+						}, {
+							"id": "toapp_ask_statistic",
+							"title": "برنامه نمونه ۲",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_03",
+								"title": "برنامه نمونه ۲",
+								"info": "اطلاعات اضافه ۲",
+								"infoState": "Positive",
+								"numberValue": 2,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "عنوان ۲",
+								"icon": "sap-icon://visits",
+								"targetURL": "#Action-toapp_ask_statistic"
+							}
+						}, {
+							"id": "toappnothing",
+							"title": "آیا به پشتیبانی نیاز دارید؟",
+							"size": "1x2",
+							"tileType": "sap.ushell.ui.tile.ImageTile",
+							"properties": {
+								"chipId": "catalogTile_04",
+								"title": "آیا به پشتیبانی نیاز دارید؟",
+								"info": "",
+								"infoState": "Positive",
+								"highlightTerms": "",
+								"icon": "",
+								"subtitle": "می توانید با ما از طریق ایمیل info@mjzsoft.com تماس بگیرید.",
+								"targetURL": "https://www.mjzsoft.com/contact/",
+								"imageSource": "./images/mjzsoft.jpg"
+							}
+						}]
+					}],
+					"groups": [{
+						"id": "main",
+						"title": "main",
+						"isPreset": true,
+						"isVisible": true,
+						"isGroupLocked": false,
+						"tiles": []
+					}, {
+						"id": "ask_group",
+						"title": "برنامه های اصلی",
+						"isPreset": true,
+						"isVisible": true,
+						"isGroupLocked": false,
+						"tiles": [{
+							"id": "toapp_ask_builder",
+							"title": "برنامه نمونه ۱",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_00",
+								"title": "برنامه نمونه ۱",
+								"info": "اطلاعات اضافه ۱",
+								"infoState": "Positive",
+								"numberValue": 1,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "عنوان ۱",
+								"icon": "sap-icon://attachment-text-file",
+								"targetURL": "#Action-toapp_ask_builder"
+							}
+						}, {
+							"id": "toapp_ask_userSurvey",
+							"title": "Surveys Assignment",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_01",
+								"title": "Surveys Assignemnt",
+								"info": "Bind surveys to users",
+								"infoState": "Positive",
+								"numberValue": 3,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Assign surveys",
+								"icon": "sap-icon://visits",
+								"targetURL": "#Action-toapp_ask_userSurvey"
+							}
+						}, {
+							"id": "toapp_ask_survey",
+							"title": "Your Surveys",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_02",
+								"title": "Your Surveys",
+								"info": "Do your surveys",
+								"infoState": "Positive",
+								"numberValue": 4,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Do your surveys",
+								"icon": "sap-icon://request",
+								"targetURL": "#Action-toapp_ask_survey"
+							}
+						}, {
+							"id": "toapp_ask_statistic",
+							"title": "برنامه نمونه ۲",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_03",
+								"title": "برنامه نمونه ۲",
+								"info": "اطلاعات اضافه ۲",
+								"infoState": "Positive",
+								"numberValue": 2,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "عنوان ۲",
+								"icon": "sap-icon://visits",
+								"targetURL": "#Action-toapp_ask_statistic"
+							}
+						}]
+					}, {
+						"id": "news_group",
+						"title": "News feed",
+						"isPreset": true,
+						"isVisible": true,
+						"isGroupLocked": false,
+						"tiles": [{
+							"id": "toappnothing",
+							"title": "آیا به پشتیبانی نیاز دارید؟",
+							"size": "1x2",
+							"tileType": "sap.ushell.ui.tile.ImageTile",
+							"properties": {
+								"title": "آیا به پشتیبانی نیاز دارید؟",
+								"info": "",
+								"infoState": "Positive",
+								"highlightTerms": "",
+								"icon": "",
+								"subtitle": "می توانید با ما از طریق ایمیل info@mjzsoft.com تماس بگیرید.",
+								"targetURL": "https://www.mjzsoft.com/contact/",
+								"imageSource": "./images/mjzsoft.jpg"
+							}
+						}]
+					}]
+				}
+			}
+		},
+		"NavTargetResolution": {
+			"config": {
+				"enableClientSideTargetResolution": true
+			}
+		},
+		"ClientSideTargetResolution": {
+			"adapter": {
+				"config": {
+					"inbounds": {
+						"actionToapp_ask_builder": {
+							"semanticObject": "Action",
+							"action": "toapp_ask_builder",
+							"title": "عنوان ۱",
+							"signature": {
+								"parameters": {},
+								"additionalParameters": "allowed"
+							},
+							"resolutionResult": {
+								"applicationType": "SAPUI5",
+								"additionalInformation": "SAPUI5.Component=com.mjzsoft.AppSample1",
+								"url": "./dists/AppSample1"
+							}
+						},
+						"actionToapp_ask_statistic": {
+							"semanticObject": "Action",
+							"action": "toapp_ask_statistic",
+							"title": "عنوان ۲",
+							"signature": {
+								"parameters": {},
+								"additionalParameters": "allowed"
+							},
+							"resolutionResult": {
+								"applicationType": "SAPUI5",
+								"additionalInformation": "SAPUI5.Component=com.mjzsoft.QuestionnaireStatistics",
+								"url": "./dists/AppSample2"
+							}
+						},
+						"actionToapp_ask_userSurvey": {
+							"semanticObject": "Action",
+							"action": "toapp_ask_userSurvey",
+							"title": "Subtitle 3",
+							"signature": {
+								"parameters": {},
+								"additionalParameters": "allowed"
+							},
+							"resolutionResult": {
+								"applicationType": "SAPUI5",
+								"additionalInformation": "SAPUI5.Component=com.mjzsoft.UserSurveys",
+								"url": "./dists/AppSample3"
+							}
+						},
+						"actionToapp_ask_survey": {
+							"semanticObject": "Action",
+							"action": "toapp_ask_survey",
+							"title": "Subitle 4",
+							"signature": {
+								"parameters": {},
+								"additionalParameters": "allowed"
+							},
+							"resolutionResult": {
+								"applicationType": "SAPUI5",
+								"additionalInformation": "SAPUI5.Component=com.mjzsoft.Survey",
+								"url": "./dists/AppSample4"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

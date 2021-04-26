@@ -1,0 +1,3 @@
+id,name,ui5Operator
+EQ,Equals,sap.ui.model.FilterOperator.EQ
+GT,Greater than,sap.ui.model.FilterOperator.GT

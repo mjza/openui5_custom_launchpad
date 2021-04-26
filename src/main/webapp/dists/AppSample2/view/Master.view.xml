@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View controllerName="com.mjzsoft.QuestionnaireStatistics.controller.Master" xmlns="sap.m" xmlns:semantic="sap.f.semantic"
+	xmlns:mvc="sap.ui.core.mvc">
+	<semantic:SemanticPage id="masterPage" preserveHeaderStateOnScroll="true" toggleHeaderOnTitleClick="false" class="sapUiNoContentPadding">
+		<semantic:titleHeading>
+			<Title id="masterPageTitle" text="{masterView>/title}" level="H2"/>
+		</semantic:titleHeading>
+		<semantic:content>
+			<ScrollContainer id="scrollBar" class="myContainer" height="100%" width="100%" horizontal="true" vertical="true" focusable="true">
+				<VBox justifyContent="Center">
+					<MessageStrip busy="{masterView>/busy}" customIcon="sap-icon://survey" text="{masterView>/masterCounterTitle}" showIcon="true"
+						type="Information"/>
+					<SearchField id="searchField" showRefreshButton="true" tooltip="{i18n>masterSearchTooltip}" search="handleSearch" liveChange="liveSearch"
+						width="auto"/>
+					<FlexBox id="flexboxId" busy="{masterView>/busy}" class="sapFDynamicPageAlignContent sapUiTinyMarginLeft sapUiNoMarginTop" wrap="Wrap"
+						justifyContent="Center" direction="{appView>/flexBoxDirection}" alignItems="Center"
+						items="{ path: '/FormSet', parameters: {expand: 'Questions,Icon'}, sorter: { path: 'Name', descending: false }, filters: [ {path : 'Deleted', operator : 'EQ', value1 : false}], events: { dataReceived: '.onFormsReceived' } }">
+						<GenericTile header="{ path:'Name'}" headerImage="{path: 'Icon/Source'}"
+							tooltip="{parts: [{path: 'Name'}, {path: 'Questions', formatter:'com.mjzsoft.QuestionnaireStatistics.model.individualFormatter.formQuestionsCounterTooltip'}, {path: 'i18n>questionsCount'}], formatter: '.formatter.customFlexBoxTooltip'}"
+							class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" press="onPressItem">
+							<TileContent unit="{i18n>questionsCount}" footerColor="Critical">
+								<content>
+									<NumericContent value="{ path:'Questions', formatter:'com.mjzsoft.QuestionnaireStatistics.model.individualFormatter.formQuestionsCounter' }"
+										withMargin="false"/>
+								</content>
+							</TileContent>
+						</GenericTile>
+					</FlexBox>
+				</VBox>
+			</ScrollContainer>
+		</semantic:content>
+	</semantic:SemanticPage>
+</mvc:View>

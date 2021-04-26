@@ -1,0 +1,1 @@
+sap.ui.define(["sap/m/Wizard"],function(e){"use strict";return e.extend("com.mjzsoft.Survey.control.InfiniteWizard",{renderer:{},_isMaxStepCountExceeded:function(){var e=this._getStepCount();if(this.getEnableBranching()){return false}return e>=1e3},_isMinStepCountReached:function(){var e=this._getStepCount();return e>=1}})});

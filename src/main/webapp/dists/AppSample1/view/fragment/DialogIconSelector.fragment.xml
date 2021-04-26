@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<SelectDialog id="iconDialog" title="{i18n>iconSelectionTitle}" items="{path: '/IconSet'}" search="handleSearchIcon"
+		noDataText="{i18n>noIconsText}" liveChange="liveSearchIcon" confirm="handleCloseIcon" draggable="true">
+		<StandardListItem title="{Name}" icon="{Source}" iconDensityAware="false" iconInset="false" type="Active"/>
+	</SelectDialog>
+</core:FragmentDefinition>

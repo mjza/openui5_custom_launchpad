@@ -1,0 +1,213 @@
+{
+    "resources": [
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "model/JsonModelManager.js"
+        },
+        {
+            "name": "utils/Utils.js"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "model/individualFormatter.js"
+        },
+        {
+            "name": "model/formatter.js"
+        },
+        {
+            "name": "i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "js/jwtAuthApp.js"
+        },
+        {
+            "name": "js/XML2JSON.js"
+        },
+        {
+            "name": "js/Validator.js"
+        },
+        {
+            "name": "controller/ObjectDetail.controller.js"
+        },
+        {
+            "name": "controller/NotFound.controller.js"
+        },
+        {
+            "name": "controller/NotAllowed.controller.js"
+        },
+        {
+            "name": "controller/Master.controller.js"
+        },
+        {
+            "name": "controller/ErrorHandler.js"
+        },
+        {
+            "name": "controller/DetailObjectNotFound.js"
+        },
+        {
+            "name": "controller/DetailObjectNotFound.controller.js"
+        },
+        {
+            "name": "controller/Detail.controller.js"
+        },
+        {
+            "name": "controller/BaseController.js"
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "conf/env.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/individualFormatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/JsonModelManager-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "js/jwtAuthApp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "js/XML2JSON-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "js/Validator-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/ObjectDetail-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/NotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/NotAllowed-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Master-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/ErrorHandler-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/DetailObjectNotFound-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/DetailObjectNotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Detail-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "utils/Utils-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "conf/env-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "view/fragment/DialogRegexSelector.fragment.xml"
+        },
+        {
+            "name": "view/fragment/DialogIconSelector.fragment.xml"
+        },
+        {
+            "name": "view/fragment/AddForm.fragment.xml"
+        },
+        {
+            "name": "view/ViewSettingsDialog.fragment.xml"
+        },
+        {
+            "name": "view/ObjectDetail.view.xml"
+        },
+        {
+            "name": "view/NotFound.view.xml"
+        },
+        {
+            "name": "view/NotAllowed.view.xml"
+        },
+        {
+            "name": "view/Master.view.xml"
+        },
+        {
+            "name": "view/DetailObjectNotFound.view.xml"
+        },
+        {
+            "name": "view/Detail.view.xml"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "css/style.css"
+        }
+    ]
+}

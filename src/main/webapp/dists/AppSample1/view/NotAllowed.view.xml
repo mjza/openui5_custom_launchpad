@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View controllerName="com.mjzsoft.QuestionnaireBuilder.controller.NotAllowed" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<MessagePage id="page" title="{i18n>notAdminTitle}" text="{i18n>noAdminText}" icon="sap-icon://product" description="">
+		<customDescription>
+			<Link id="link" text="{i18n>backToMain}" press="onLinkPressed"/>
+		</customDescription>
+	</MessagePage>
+</mvc:View>

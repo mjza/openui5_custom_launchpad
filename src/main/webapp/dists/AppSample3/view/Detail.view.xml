@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic"
+	xmlns:footerbar="sap.ushell.ui.footerbar" controllerName="com.mjzsoft.UserSurveys.controller.Detail">
+	<semantic:SemanticPage id="detailPage" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}" class="sapUiNoContentPadding">
+		<semantic:titleHeading>
+			<Title text="{detailView>/title}"/>
+		</semantic:titleHeading>
+		<semantic:content>
+			<VBox>
+				<items>
+					<Table id="idDetailTableLocationSet"
+						items="{path:'/SurveySet', filters: [{ path: 'Form/Deleted', operator: 'EQ', value1: 'false' }], templateShareable:true, parameters:{expand:'Form,Form/Questions,Form/Questions/Answers'} }"
+						mode="{path: '/', formatter: '.formatter.userSurveyTableMode'}" inset="false" selectionChange="onSelectionChange"
+						busyIndicatorDelay="{detailView>/delay}" updateFinished="onUpdateFinished">
+						<columns>
+							<Column>
+								<Text text="{i18n>colSurvey}"/>
+							</Column>
+							<Column>
+								<Text text="{i18n>colValidFrom}"/>
+							</Column>
+							<Column>
+								<Text text="{i18n>colValidTo}"/>
+							</Column>
+							<Column>
+								<Text text="{i18n>colDone}"/>
+							</Column>
+							<Column>
+								<Text text="{i18n>colQuestionCount}"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="{path: 'UserId', formatter: '.formatter.userSurveyTableItemType'}" press="onPressItem">
+								<Text text="{Form/Name}"/>
+								<VBox>
+									<Text
+										text="{ path:'Form/ValidFrom', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium' }, formatter: 'com.mjzsoft.UserSurveys.model.Formatter.successValue'}"/>
+									<Text
+										text="{ path:'Form/ValidFrom', type: 'sap.ui.model.type.Time', formatOptions: { style: 'medium' }, formatter: 'com.mjzsoft.UserSurveys.model.Formatter.successValue'}"/>
+								</VBox>
+								<VBox>
+									<Text
+										text="{ path:'Form/ValidTo', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium' }, formatter: 'com.mjzsoft.UserSurveys.model.Formatter.successValue'}"/>
+									<Text
+										text="{ path:'Form/ValidTo', type: 'sap.ui.model.type.Time', formatOptions: { style: 'medium' }, formatter: 'com.mjzsoft.UserSurveys.model.Formatter.successValue'}"/>
+								</VBox>
+								<VBox>
+									<Text visible="{= ${DoneAt} !== null}"
+										text="{ parts: [ {path:'DoneAt', type: 'sap.ui.model.type.Date', formatOptions: { style: 'medium' }}, {path:'Form/ValidFrom'}, {path:'Form/ValidTo'}, {path:'UserId'} ], formatter: 'com.mjzsoft.UserSurveys.model.Formatter.doneValue'}"/>
+									<Text
+										text="{ parts: [ {path:'DoneAt', type: 'sap.ui.model.type.Time', formatOptions: { style: 'medium' }}, {path:'Form/ValidFrom'}, {path:'Form/ValidTo'}, {path:'UserId'} ], formatter: 'com.mjzsoft.UserSurveys.model.Formatter.doneValue'}"/>
+								</VBox>
+								<Text text="{path: 'Form/Id', formatter: '.calcQuestionCount'}"/>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</items>
+			</VBox>
+		</semantic:content>
+		<semantic:titleCustomIconActions>
+			<OverflowToolbarButton visible="{path: '/', formatter: '.formatter.userSurveyTableButtonVisible'}" icon="sap-icon://add" press="onPressAdd"/>
+			<OverflowToolbarButton visible="{path: '/', formatter: '.formatter.userSurveyTableButtonVisible'}" icon="sap-icon://delete"
+				press="onPressDelete"/>
+			<OverflowToolbarButton visible="{= ${detailView>/fullscreen}}" icon="sap-icon://exit-full-screen" press="toggleFullScreen"/>
+			<OverflowToolbarButton visible="{= ${detailView>/fullscreen} === false}" icon="sap-icon://full-screen" press="toggleFullScreen"/>
+			<OverflowToolbarButton icon="sap-icon://decline" press="onCloseDetailPress"/>
+		</semantic:titleCustomIconActions>
+	</semantic:SemanticPage>
+</mvc:View>

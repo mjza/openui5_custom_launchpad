@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/model/Filter","sap/ui/model/FilterOperator"],function(e,t){"use strict";return{formSurveyCounter:function(e){var t=this.getBindingContext().getPath()+"/Surveys";var r=this.getModel().bindList(t,null,null,[new sap.ui.model.Filter({path:"Form/Deleted",operator:sap.ui.model.FilterOperator.EQ,value1:false})]);return r.getLength()}}},true);

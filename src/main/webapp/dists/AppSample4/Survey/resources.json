@@ -1,0 +1,167 @@
+{
+    "resources": [
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "../i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "../i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "../utils/Utils.js"
+        },
+        {
+            "name": "../manifest.json"
+        },
+        {
+            "name": "../utils/ControlHelper.js"
+        },
+        {
+            "name": "../model/models.js"
+        },
+        {
+            "name": "../model/individualFormatter.js"
+        },
+        {
+            "name": "../model/formatter.js"
+        },
+        {
+            "name": "../js/jwtAuthApp.js"
+        },
+        {
+            "name": "../js/XML2JSON.js"
+        },
+        {
+            "name": "../controller/Worklist.controller.js"
+        },
+        {
+            "name": "../controller/Object.controller.js"
+        },
+        {
+            "name": "../controller/NotFound.controller.js"
+        },
+        {
+            "name": "../controller/ErrorHandler.js"
+        },
+        {
+            "name": "../controller/BaseController.js"
+        },
+        {
+            "name": "../controller/App.controller.js"
+        },
+        {
+            "name": "../control/InfiniteWizard.js"
+        },
+        {
+            "name": "../config/env.js"
+        },
+        {
+            "name": "../Component.js"
+        },
+        {
+            "name": "../manifest-bundle.zip"
+        },
+        {
+            "name": "../Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "../controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../utils/ControlHelper-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../model/individualFormatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../model/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../js/jwtAuthApp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../js/XML2JSON-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../controller/Worklist-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../controller/Object-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../controller/NotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../controller/ErrorHandler-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../utils/Utils-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../control/InfiniteWizard-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../config/env-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "../i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "../view/Worklist.view.xml"
+        },
+        {
+            "name": "../view/ObjectNotFound.view.xml"
+        },
+        {
+            "name": "../view/Object.view.xml"
+        },
+        {
+            "name": "../view/NotFound.view.xml"
+        },
+        {
+            "name": "../view/App.view.xml"
+        },
+        {
+            "name": "../css/style.css"
+        }
+    ]
+}

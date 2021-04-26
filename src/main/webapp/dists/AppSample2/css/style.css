@@ -1,0 +1,93 @@
+/* For removing the borders in disabled mode*/
+
+.sapMInputBaseDisabledWrapper {
+    border: none;
+    background: none;
+}
+
+.sapMInputBaseDisabled {
+    opacity: 1.0;
+}
+
+.sapMSltDisabled {
+    border: none;
+    opacity: 1.0;
+    background: none;
+}
+
+.sapMSltDisabled > .sapMSltArrow {
+    display: none;
+}
+
+.CustomFooter {
+    background-color: #bfa9a0;
+    border-top: 0px solid #d9d9d9;
+}
+
+.noScroll .sapFDynamicPageContent {
+    padding: 0;
+    height: 100%;
+}
+
+.noScroll .sapFDynamicPageContent > div {
+    padding: 0;
+    height: 100%;
+}
+
+.myContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.selectedTileItem {
+    background-color: #b0e1f9;
+}
+
+.boldText {
+    font-weight: bold !important;
+}
+
+.lightGrayBorder {
+    border: 1px lightgray solid;
+}
+
+.redStar .sapMRISel {
+    color: red;
+}
+
+.orangeStar .sapMRISel {
+    color: orange;
+}
+
+.yellowStar .sapMRISel {
+    color: #CCCC00;
+}
+
+.lightGreenStar .sapMRISel {
+    color: #74A538;
+}
+
+.darkGreenStar .sapMRISel {
+    color: #2B5E1C;
+}
+
+.sapUiSizeCompact .sapMRI {
+    margin: 0rem 0;
+}
+
+.greenBar .sapSuiteIBCBar {
+    background-color: #2B5E1C;
+}
+
+.vizFrameBackground .sapSuiteUiCommonsChartContainerChartArea {
+    background-color: transparent;
+}
+
+.vizFrameBackground .sapMTBStandard {
+    border-bottom: 0px solid #d9d9d9;
+}
+
+.transparentBackground .sapMInputBaseContentWrapper {
+    background: transparent !important;
+}

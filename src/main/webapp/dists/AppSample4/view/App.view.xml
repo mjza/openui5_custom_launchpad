@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View controllerName="com.mjzsoft.Survey.controller.App" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<Shell>
+		<App id="app" busy="{appView>/busy}" busyIndicatorDelay="{appView>/delay}"/>
+	</Shell>
+</mvc:View>

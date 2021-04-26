@@ -1,0 +1,8 @@
+id,name,ui5Class
+QT1,5Star,sap.m.RatingIndicator
+QT2,Yes/No,sap.m.Switch
+QT3,Single Select,sap.m.RadioButton
+QT4,Multiple Choice,sap.m.CheckBox
+QT5,Simple Short Question,sap.m.Input
+QT6,Simple Long Question,sap.m.TextArea
+QT7,Drop-down List,sap.m.Select

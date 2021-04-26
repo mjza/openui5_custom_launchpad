@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:semantic="sap.f.semantic"
+	xmlns:smartTable="sap.ui.comp.smarttable" controllerName="com.mjzsoft.QuestionnaireBuilder.controller.Detail">
+	<semantic:SemanticPage id="formPage" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}" toggleHeaderOnTitleClick="false"
+		class="sapUiNoContentPadding" showFooter="true" headerPinnable="false">
+		<semantic:titleHeading>
+			<VBox>
+				<HBox>
+					<core:Icon src="{path: 'Icon/Source'}" size="2.5em" tooltip="{i18n>Icon}" class="sapUiSmallMarginEnd" color="Default"/>
+					<VBox alignItems="Start" alignContent="SpaceAround">
+						<Title text="{Name}" level="H2"/>
+						<ObjectStatus text="{= (${Universal} ? ${i18n>statePublic} : ${i18n>statePrivate}) }" state="{= (${Universal} ? 'Success' : 'Warning') }"/>
+					</VBox>
+				</HBox>
+				<ToolbarSpacer/>
+				<HBox>
+					<Label text="{i18n>ValidFrom}:" design="Bold"/>
+					<Label text="{ path:'ValidFrom', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium' } }" class="sapUiTinyMarginBegin"/>
+				</HBox>
+				<HBox>
+					<Label text="{i18n>ValidTo}:" design="Bold"/>
+					<Label text="{ path:'ValidTo', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium' } }" class="sapUiTinyMarginBegin"/>
+				</HBox>
+				<items/>
+			</VBox>
+		</semantic:titleHeading>
+		<semantic:titleCustomIconActions>
+			<Button icon="sap-icon://edit-outside" tooltip="{i18n>EditLabel}" visible="{= ${detailView>/editMode} }" press="onEditFormBtnPress"
+				class="sapUiContentPadding"/>
+			<OverflowToolbarButton icon="{= (${detailView>/fullscreen} ? 'sap-icon://exit-full-screen' : 'sap-icon://full-screen' ) }"
+				enabled="{= ((!${detailView>/editMode} &amp;&amp; !${appView>/editMode}) || ${detailView>/fullscreen} )}" press="toggleFullScreen"/>
+			<OverflowToolbarButton icon="sap-icon://decline" press="onCloseDetailPress"
+				enabled="{= !${detailView>/editMode} &amp;&amp; !${appView>/editMode} }"/>
+		</semantic:titleCustomIconActions>
+		<semantic:content>
+			<smartTable:SmartTable id="smartTableQuestions" entitySet="QuestionSet" tableBindingPath="QuestionsJsonModel&gt;/QuestionSet"
+				header="{i18n>tableTitle}" showRowCount="true" tableType="ResponsiveTable" showFullScreenButton="false" useExportToExcel="false"
+				useVariantManagement="false" enableAutoBinding="true" beforeRebindTable="onBeforeRebindTable" class="mjzsoftStickySmartTable"
+				placeToolbarInTable="true" ignoredFields="Deleted,QtypeId,FormId,Sequence">
+				<smartTable:customToolbar>
+					<OverflowToolbar design="Transparent">
+						<ToolbarSpacer/>
+						<SearchField tooltip="{i18n>worklistSearchTooltip}" search="onSearch" liveChange="onSearchLiveChange" width="auto"/>
+						<Button icon="sap-icon://add" type="Transparent" tooltip="{i18n>AddLabel}"
+							enabled="{= !${detailView>/editMode} &amp;&amp; !${appView>/editMode} }" press="onCreateBtnPress"/>
+						<Button icon="sap-icon://delete" type="Transparent" tooltip="{i18n>DeleteLabel}" enabled="{= ${detailView>/editMode} }"
+							press="onDeleteBtnPress"/>
+					</OverflowToolbar>
+				</smartTable:customToolbar>
+				<Table id="tableQuestions" width="auto" mode="{ path: 'detailView>/editMode', formatter:'.formatter.tableModeDetailView' }"
+					busyIndicatorDelay="0" busy="{detailView>/tableBusy}" growing="true" growingThreshold="20" growingScrollToLoad="true"
+					noDataText="{detailView>/table0NoDataText}" updateFinished="onUpdateFinished" selectionChange="onTableItemPress" alternateRowColors="true"
+					sticky="ColumnHeaders,HeaderToolbar">
+					<columns>
+						<Column visible="false">
+							<customData>
+								<core:CustomData key="p13nData"
+									value="{'columnKey': 'Id', 'leadingProperty': 'Id', 'filterProperty': 'Id', 'columnIndex':'0'}"/>
+							</customData>
+							<Text text="{i18n>tableIdColumnTitle}"/>
+						</Column>
+						<Column hAlign="Center">
+							<customData>
+								<core:CustomData key="p13nData" value="{'columnKey': 'QuestionIcon', 'columnIndex':'1'}"/>
+							</customData>
+							<Text text="{i18n>tableQuestionTypeColumnTitle}"/>
+						</Column>
+						<Column width="50%">
+							<customData>
+								<core:CustomData key="p13nData"
+									value="{'columnKey': 'Question', 'leadingProperty': 'Question', 'filterProperty': 'Question', 'columnIndex':'2'}"/>
+							</customData>
+							<Text text="{i18n>tableQuestionColumnTitle}"/>
+						</Column>
+						<Column hAlign="Center">
+							<customData>
+								<core:CustomData key="p13nData"
+									value="{'columnKey': 'Mandatory', 'leadingProperty': 'Mandatory', 'filterProperty': 'Mandatory', 'columnIndex':'3'}"/>
+							</customData>
+							<Text text="{i18n>tableMandatoryColumnTitle}"/>
+						</Column>
+						<Column hAlign="Center">
+							<customData>
+								<core:CustomData key="p13nData" value="{'columnKey': 'Reorder', 'columnIndex':'4'}"/>
+							</customData>
+							<Text text="{i18n>tableReorderColumnTitle}"/>
+						</Column>
+						<Column visible="false">
+							<customData>
+								<core:CustomData key="p13nData"
+									value="{'columnKey': 'RandomWeight', 'leadingProperty': 'RandomWeight', 'filterProperty': 'RandomWeight', 'columnIndex':'5', 'scale': '1', 'precision':'2' }"/>
+							</customData>
+							<Text text="{i18n>tableRandomWeightColumnTitle}"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem type="{ path: 'detailView>/editMode', formatter:'.formatter.tableColumnType' }"
+							selected="{= (${detailView>/selectedItemId} === ${QuestionsJsonModel>Id}) }" press="onTableItemPress">
+							<cells>
+								<Text text="{QuestionsJsonModel>Id}"/>
+								<core:Icon src="{path: 'QuestionsJsonModel>QtypeId', formatter: '.formatter.getQuestionIcon'}" size="1em"
+									tooltip="{path: 'QuestionsJsonModel>Qtype/Name'}"/>
+								<Text text="{QuestionsJsonModel>Question}"/>
+								<core:Icon src="{path: 'QuestionsJsonModel>Mandatory', formatter: '.formatter.getMandatoryIcon'}" size="1em"
+									visible="{ path: 'QuestionsJsonModel>QtypeId', formatter: '.formatter.isMandatoryVisible' }"
+									color="{path: 'QuestionsJsonModel>Mandatory', formatter: '.formatter.getMandatoryIconColor'}"
+									tooltip="{path: 'QuestionsJsonModel>Mandatory', formatter: '.formatter.getMandatoryTooltip'}"/>
+								<VBox>
+									<Button icon="sap-icon://arrow-top" type="Transparent" tooltip="{i18n>UpTooltip}" enabled="{= ${detailView>/editMode} }"
+										press="tableUpBtnPress"/>
+									<Button icon="sap-icon://arrow-bottom" type="Transparent" tooltip="{i18n>DownTooltip}" enabled="{= ${detailView>/editMode} }"
+										press="tableDownBtnPress"/>
+								</VBox>
+								<Text text="{QuestionsJsonModel>RandomWeight}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</smartTable:SmartTable>
+		</semantic:content>
+		<semantic:footerCustomActions>
+			<Button icon="sap-icon://add" type="Transparent" tooltip="{i18n>AddLabel}" visible="{= !${detailView>/editMode} }"
+				enabled="{= !${detailView>/editMode} &amp;&amp; !${appView>/editMode} }" press="onCreateBtnPress"/>
+			<Button icon="sap-icon://edit" tooltip="{i18n>BtnEdit}" visible="{= !${detailView>/editMode} }" enabled="{= !${appView>/editMode} }"
+				press="onPressEdit"/>
+			<Button icon="sap-icon://save" tooltip="{i18n>BtnSave}" visible="{= ${detailView>/editMode} }" press="onPressSaveEdit"/>
+			<Button icon="sap-icon://sys-cancel" tooltip="{i18n>BtnCancel}" visible="{= ${detailView>/editMode} }" press="onPressCancel"/>
+		</semantic:footerCustomActions>
+	</semantic:SemanticPage>
+</mvc:View>

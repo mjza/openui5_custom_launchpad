@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.5"
+	xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.eclipse.org/eclipselink/xsds/persistence/orm http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_2_5.xsd">
+	<named-query name="Action.findAll">
+		<query>select a from Action a</query>
+	</named-query>
+	<named-query name="Answer.findAll">
+		<query>select a from Answer a</query>
+	</named-query>
+	<named-query name="Condition.findAll">
+		<query>select c from Condition c</query>
+	</named-query>
+	<named-query name="Form.findAll">
+		<query>select f from Form f</query>
+	</named-query>
+	<named-query name="Icon.findAll">
+		<query>select i from Icon i</query>
+	</named-query>
+	<named-query name="Operator.findAll">
+		<query>select o from Operator o</query>
+	</named-query>
+	<named-query name="Option.findAll">
+		<query>select o from Option o</query>
+	</named-query>
+	<named-query name="Qtype.findAll">
+		<query>select q from Qtype q</query>
+	</named-query>
+	<named-query name="Question.findAll">
+		<query>select q from Question q</query>
+	</named-query>
+	<named-query name="Role.findAll">
+		<query>select r from Role r</query>
+	</named-query>
+	<named-query name="Regex.findAll">
+		<query>select r from Regex r</query>
+	</named-query>
+	<named-query name="Survey.findAll">
+		<query>select s from Survey s</query>
+	</named-query>
+	<named-query name="UserHasRole.findAll">
+		<query>select u from UserHasRole u</query>
+	</named-query>
+	<named-query name="User.findAll">
+		<query>select u from User u</query>
+	</named-query>
+	<named-query name="Permission.findAll">
+		<query>select p from Permission p</query>
+	</named-query>
+	<entity class="com.mjzsoft.launchpad.odata.model.Action"
+		access="VIRTUAL">
+		<table name="actions" />
+		<attributes>
+			<id name="id" attribute-type="String">
+			</id>
+			<basic name="name" attribute-type="String">
+			</basic>
+			<one-to-many name="conditions" mapped-by="action"
+				target-entity="com.mjzsoft.launchpad.odata.model.Condition"
+				attribute-type="java.util.Set">
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Answer"
+		access="VIRTUAL">
+		<table name="answers" />
+		<attributes>
+			<id name="id" attribute-type="int">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="answer" attribute-type="String">
+			</basic>
+			<many-to-one name="option"
+				target-entity="com.mjzsoft.launchpad.odata.model.Option">
+			</many-to-one>
+			<many-to-one name="question"
+				target-entity="com.mjzsoft.launchpad.odata.model.Question">
+			</many-to-one>
+			<many-to-one name="user"
+				target-entity="com.mjzsoft.launchpad.odata.model.jwt.User">
+				<join-column name="user_id" />
+			</many-to-one>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Condition"
+		access="VIRTUAL">
+		<table name="conditions" />
+		<attributes>
+			<id name="id" attribute-type="int">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="deleted" attribute-type="boolean">
+			</basic>
+			<basic name="operand1" attribute-type="String">
+			</basic>
+			<basic name="operand2" attribute-type="String">
+			</basic>
+			<many-to-one name="action"
+				target-entity="com.mjzsoft.launchpad.odata.model.Action">
+			</many-to-one>
+			<many-to-one name="operator"
+				target-entity="com.mjzsoft.launchpad.odata.model.Operator">
+			</many-to-one>
+			<many-to-one name="question1"
+				target-entity="com.mjzsoft.launchpad.odata.model.Question">
+				<join-column name="question_source_id" />
+			</many-to-one>
+			<many-to-one name="question2"
+				target-entity="com.mjzsoft.launchpad.odata.model.Question">
+				<join-column name="question_target_id" />
+			</many-to-one>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Form" access="VIRTUAL">
+		<table name="forms" />
+		<attributes>
+			<id name="id" attribute-type="int">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="deleted" attribute-type="boolean">
+			</basic>
+			<basic name="universal" attribute-type="boolean">
+			</basic>
+			<basic name="name" attribute-type="String">
+			</basic>
+			<basic name="validFrom" attribute-type="java.util.Calendar">
+				<column name="valid_from" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="validTo" attribute-type="java.util.Calendar">
+				<column name="valid_to" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<many-to-one name="icon"
+				target-entity="com.mjzsoft.launchpad.odata.model.Icon">
+			</many-to-one>
+			<one-to-many name="questions" mapped-by="form"
+				target-entity="com.mjzsoft.launchpad.odata.model.Question"
+				attribute-type="java.util.Set">
+			</one-to-many>
+			<one-to-many name="surveys" mapped-by="form"
+				target-entity="com.mjzsoft.launchpad.odata.model.Survey"
+				attribute-type="java.util.Set">
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Icon" access="VIRTUAL">
+		<table name="icons" />
+		<attributes>
+			<id name="id" attribute-type="String">
+			</id>
+			<basic name="name" attribute-type="String">
+			</basic>
+			<basic name="source" attribute-type="String">
+			</basic>
+			<one-to-many name="forms" mapped-by="icon"
+				target-entity="com.mjzsoft.launchpad.odata.model.Form"
+				attribute-type="java.util.Set">
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Operator"
+		access="VIRTUAL">
+		<table name="operators" />
+		<attributes>
+			<id name="id" attribute-type="String">
+			</id>
+			<basic name="name" attribute-type="String">
+			</basic>
+			<basic name="ui5Operator" attribute-type="String">
+				<column name="ui5_operator" />
+			</basic>
+			<one-to-many name="conditions" mapped-by="operator"
+				target-entity="com.mjzsoft.launchpad.odata.model.Condition"
+				attribute-type="java.util.Set">
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Option"
+		access="VIRTUAL">
+		<table name="options" />
+		<attributes>
+			<id name="id" attribute-type="int">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="answer" attribute-type="String">
+			</basic>
+			<basic name="defaultAnswer" attribute-type="boolean">
+				<column name="default_answer" />
+			</basic>
+			<basic name="deleted" attribute-type="boolean">
+			</basic>
+			<basic name="sequence" attribute-type="int">
+			</basic>
+			<basic name="value" attribute-type="int">
+			</basic>
+			<many-to-one name="question"
+				target-entity="com.mjzsoft.launchpad.odata.model.Question">
+			</many-to-one>
+			<one-to-many name="answers" mapped-by="option"
+				target-entity="com.mjzsoft.launchpad.odata.model.Answer"
+				attribute-type="java.util.Set">
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Qtype" access="VIRTUAL">
+		<table name="qtypes" />
+		<attributes>
+			<id name="id" attribute-type="String">
+			</id>
+			<basic name="name" attribute-type="String">
+			</basic>
+			<basic name="ui5Class" attribute-type="String">
+				<column name="ui5_class" />
+			</basic>
+			<one-to-many name="questions" mapped-by="qtype"
+				target-entity="com.mjzsoft.launchpad.odata.model.Question"
+				attribute-type="java.util.Set">
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Question"
+		access="VIRTUAL">
+		<table name="questions" />
+		<attributes>
+			<id name="id" attribute-type="int">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="deleted" attribute-type="boolean">
+			</basic>
+			<basic name="mandatory" attribute-type="boolean">
+			</basic>
+			<basic name="question" attribute-type="String">
+			</basic>
+			<basic name="randomWeight" attribute-type="double">
+				<column name="random_weight" />
+			</basic>
+			<basic name="sequence" attribute-type="int">
+			</basic>
+			<many-to-one name="form"
+				target-entity="com.mjzsoft.launchpad.odata.model.Form">
+			</many-to-one>
+			<many-to-one name="qtype"
+				target-entity="com.mjzsoft.launchpad.odata.model.Qtype">
+			</many-to-one>
+			<one-to-many name="answers" mapped-by="question"
+				target-entity="com.mjzsoft.launchpad.odata.model.Answer"
+				attribute-type="java.util.Set">
+			</one-to-many>
+			<one-to-many name="conditions1" mapped-by="question1"
+				target-entity="com.mjzsoft.launchpad.odata.model.Condition"
+				attribute-type="java.util.Set">
+			</one-to-many>
+			<one-to-many name="conditions2" mapped-by="question2"
+				target-entity="com.mjzsoft.launchpad.odata.model.Condition"
+				attribute-type="java.util.Set">
+			</one-to-many>
+			<one-to-many name="options" mapped-by="question"
+				target-entity="com.mjzsoft.launchpad.odata.model.Option"
+				attribute-type="java.util.Set">
+			</one-to-many>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.jwt.Role"
+		access="VIRTUAL">
+		<table name="roles" />
+		<attributes>
+			<id name="roleId" attribute-type="String">
+				<column name="role_id" />
+			</id>
+			<basic name="roleName" attribute-type="String">
+				<column name="role_name" />
+			</basic>			
+			<one-to-many name="permissions" mapped-by="role"
+				target-entity="com.mjzsoft.launchpad.odata.model.jwt.Permission"
+				attribute-type="java.util.Set">
+			</one-to-many>
+			<many-to-many name="users" mapped-by="roles"
+				target-entity="com.mjzsoft.launchpad.odata.model.jwt.User"
+				attribute-type="java.util.Set">
+			</many-to-many>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.jwt.Permission"
+		access="VIRTUAL">
+		<table name="permissions" />
+		<attributes>
+			<id name="id" attribute-type="int">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="createAllowed" attribute-type="boolean">
+			</basic>
+			<basic name="updateAllowed" attribute-type="boolean">
+			</basic>
+			<basic name="readAllowed" attribute-type="boolean">
+			</basic>
+			<basic name="deleteAllowed" attribute-type="boolean">
+			</basic>
+			<basic name="setName" attribute-type="String">
+			</basic>
+			<many-to-one name="role"
+				target-entity="com.mjzsoft.launchpad.odata.model.jwt.Role">
+			</many-to-one>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Regex" access="VIRTUAL">
+		<table name="regexes" />
+		<attributes>
+			<id name="id" attribute-type="int">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="name" attribute-type="String">
+			</basic>
+			<basic name="expression" attribute-type="String">
+			</basic>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.Survey"
+		access="VIRTUAL">
+		<table name="surveys" />
+		<attributes>
+			<id name="id" attribute-type="int">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="doneAt" attribute-type="java.util.Date">
+				<column name="done_at" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<many-to-one name="form"
+				target-entity="com.mjzsoft.launchpad.odata.model.Form">
+			</many-to-one>
+			<many-to-one name="user"
+				target-entity="com.mjzsoft.launchpad.odata.model.jwt.User">
+				<join-column name="user_id" />
+			</many-to-one>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.jwt.UserHasRole"
+		access="VIRTUAL">
+		<table name="user_has_role" />
+		<attributes>
+			<embedded-id name="id"
+				attribute-type="com.mjzsoft.launchpad.odata.model.jwt.UserHasRolePK"></embedded-id>
+			<many-to-one name="user"
+				target-entity="com.mjzsoft.launchpad.odata.model.jwt.User">
+				<join-column name="user_id" />
+			</many-to-one>
+		</attributes>
+	</entity>
+	<entity class="com.mjzsoft.launchpad.odata.model.jwt.User"
+		access="VIRTUAL">
+		<table name="users" />
+		<attributes>
+			<id name="userId" attribute-type="String">
+				<column name="user_id" />
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="createdAt" attribute-type="java.util.Date">
+				<column name="created_at" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="email" attribute-type="String">
+			</basic>
+			<basic name="firstName" attribute-type="String">
+				<column name="first_name" />
+			</basic>
+			<basic name="isActive" attribute-type="byte">
+				<column name="is_active" />
+			</basic>
+			<basic name="isEmailVerified" attribute-type="byte">
+				<column name="is_email_verified" />
+			</basic>
+			<basic name="lastName" attribute-type="String">
+				<column name="last_name" />
+			</basic>
+			<basic name="password" attribute-type="String">
+			</basic>
+			<basic name="photoContent" attribute-type="String">
+				<column name="photo_content" />
+				<lob />
+			</basic>
+			<basic name="updatedAt" attribute-type="java.util.Calendar">
+				<column name="updated_at" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="username" attribute-type="String">
+			</basic>
+			<one-to-many name="answers" mapped-by="user"
+				target-entity="com.mjzsoft.launchpad.odata.model.Answer"
+				attribute-type="java.util.Set">
+			</one-to-many>
+			<one-to-many name="surveys" mapped-by="user"
+				target-entity="com.mjzsoft.launchpad.odata.model.Survey"
+				attribute-type="java.util.Set">
+			</one-to-many>
+			<one-to-many name="userHasRoles" mapped-by="user"
+				target-entity="com.mjzsoft.launchpad.odata.model.jwt.UserHasRole"
+				attribute-type="java.util.Set">
+			</one-to-many>
+			<many-to-many name="roles"
+				target-entity="com.mjzsoft.launchpad.odata.model.jwt.Role"
+				attribute-type="java.util.Set">
+				<join-table name="user_has_role">
+					<join-column name="user_id" />
+					<inverse-join-column name="role_id" />
+				</join-table>
+			</many-to-many>
+		</attributes>
+	</entity>
+	<embeddable
+		class="com.mjzsoft.launchpad.odata.model.jwt.UserHasRolePK" access="VIRTUAL">
+		<attributes>
+			<basic name="userId" attribute-type="String">
+				<column name="user_id" insertable="false" updatable="false" />
+			</basic>
+			<basic name="roleId" attribute-type="String">
+				<column name="role_id" insertable="false" updatable="false" />
+			</basic>
+		</attributes>
+	</embeddable>
+</entity-mappings>

@@ -1,0 +1,1306 @@
+{
+    "resources": [
+        {
+            "name": "dists/AppSample2/controller/DetailObjectNotFound-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "i18n/sap/ui/layout/fa/messagebundle.properties"
+        },
+        {
+            "name": "i18n/sap/ui/core/fa/messagebundle.properties"
+        },
+        {
+            "name": "i18n/sap/m/fa/messagebundle.properties"
+        },
+        {
+            "name": "dists/AppSample4/i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "dists/AppSample4/i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "dists/AppSample4/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "i18n/sap/ushell/renderers/fiori2/resources/resources.properties"
+        },
+        {
+            "name": "dists/AppSample3/i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "dists/AppSample3/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "dists/AppSample2/i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "dists/AppSample2/i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "dists/AppSample2/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "dists/AppSample1/i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "dists/AppSample1/i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "dists/AppSample1/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "i18n/i18n_fa.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_fa"
+        },
+        {
+            "name": "i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "dists/AppSample4/Survey/neo-app.json"
+        },
+        {
+            "name": "dists/AppSample3/resources/cimply/ask/user_surveys/cimplyask0user0surveys/neo-app.json"
+        },
+        {
+            "name": "dists/AppSample3/resources/cimply/ask/user_surveys/cimplyask0user0surveys/di.code-validation.core_issues.json"
+        },
+        {
+            "name": "dists/AppSample4/resources/sap-ui-version.json"
+        },
+        {
+            "name": "dists/AppSample4/Survey/resources.json",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample3/resources/cimply/ask/user_surveys/cimplyask0user0surveys/resources.json",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample4/Survey/di.code-validation.core_issues.json"
+        },
+        {
+            "name": "dists/AppSample3/resources/sap-ui-version.json"
+        },
+        {
+            "name": "dists/AppSample2/resources/sap-ui-version.json"
+        },
+        {
+            "name": "dists/AppSample1/resources/sap-ui-version.json"
+        },
+        {
+            "name": "dists/AppSample4/sap-ui-cachebuster-info.json"
+        },
+        {
+            "name": "dists/AppSample4/manifest.json"
+        },
+        {
+            "name": "dists/AppSample3/sap-ui-cachebuster-info.json"
+        },
+        {
+            "name": "dists/AppSample3/manifest.json"
+        },
+        {
+            "name": "dists/AppSample2/sap-ui-cachebuster-info.json"
+        },
+        {
+            "name": "dists/AppSample2/resources.json",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample2/neo-app.json"
+        },
+        {
+            "name": "dists/AppSample2/manifest.json"
+        },
+        {
+            "name": "dists/AppSample2/di.code-validation.core_issues.json"
+        },
+        {
+            "name": "dists/AppSample1/sap-ui-cachebuster-info.json"
+        },
+        {
+            "name": "dists/AppSample1/resources.json",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample1/neo-app.json"
+        },
+        {
+            "name": "dists/AppSample1/manifest.json"
+        },
+        {
+            "name": "dists/AppSample1/di.code-validation.core_issues.json"
+        },
+        {
+            "name": "sandbox/fioriSandboxConfig_fa.json"
+        },
+        {
+            "name": "sandbox/fioriSandboxConfig_en.json"
+        },
+        {
+            "name": "sandbox/fioriSandboxConfig_de.json"
+        },
+        {
+            "name": "appconfig/sample_fioriSandboxConfig.json"
+        },
+        {
+            "name": "appconfig/fioriSandboxConfig.json"
+        },
+        {
+            "name": "sap-ui-cachebuster-info.json"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "dists/AppSample4/utils/Utils.js"
+        },
+        {
+            "name": "dists/AppSample4/utils/Utils-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/utils/ControlHelper.js"
+        },
+        {
+            "name": "dists/AppSample4/utils/ControlHelper-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/model/models.js"
+        },
+        {
+            "name": "dists/AppSample4/model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/model/individualFormatter.js"
+        },
+        {
+            "name": "dists/AppSample4/model/individualFormatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/model/formatter.js"
+        },
+        {
+            "name": "dists/AppSample4/model/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/js/jwtAuthApp.js"
+        },
+        {
+            "name": "dists/AppSample4/js/jwtAuthApp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/js/XML2JSON.js"
+        },
+        {
+            "name": "dists/AppSample4/js/XML2JSON-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/Worklist.controller.js"
+        },
+        {
+            "name": "dists/AppSample4/controller/Worklist-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/Object.controller.js"
+        },
+        {
+            "name": "dists/AppSample4/controller/Object-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/NotFound.controller.js"
+        },
+        {
+            "name": "dists/AppSample4/controller/NotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/ErrorHandler.js"
+        },
+        {
+            "name": "dists/AppSample4/controller/ErrorHandler-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/BaseController.js"
+        },
+        {
+            "name": "dists/AppSample4/controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/App.controller.js"
+        },
+        {
+            "name": "dists/AppSample4/controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/control/InfiniteWizard.js"
+        },
+        {
+            "name": "dists/AppSample4/control/InfiniteWizard-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/config/env.js"
+        },
+        {
+            "name": "dists/AppSample4/config/env-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/utils/Utils.js"
+        },
+        {
+            "name": "dists/AppSample3/utils/Utils-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/model/models.js"
+        },
+        {
+            "name": "dists/AppSample3/model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/model/individualFormatter.js"
+        },
+        {
+            "name": "dists/AppSample3/model/individualFormatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/model/formatter.js"
+        },
+        {
+            "name": "dists/AppSample3/model/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/js/jwtAuthApp.js"
+        },
+        {
+            "name": "dists/AppSample3/js/jwtAuthApp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/NotFound.controller.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/NotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/Master.controller.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/Master-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/ListSelector.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/ListSelector-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/ErrorHandler.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/ErrorHandler-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/DetailObjectNotFound.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/DetailObjectNotFound.controller.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/DetailObjectNotFound-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/DetailObjectNotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/Detail.controller.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/Detail-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/BaseController.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/App.controller.js"
+        },
+        {
+            "name": "dists/AppSample3/controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/conf/env.js"
+        },
+        {
+            "name": "dists/AppSample3/conf/env-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/model/models.js"
+        },
+        {
+            "name": "dists/AppSample2/model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/model/individualFormatter.js"
+        },
+        {
+            "name": "dists/AppSample2/model/individualFormatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/model/formatter.js"
+        },
+        {
+            "name": "dists/AppSample2/model/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/js/jwtAuthApp.js"
+        },
+        {
+            "name": "dists/AppSample2/js/jwtAuthApp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/js/XML2JSON.js"
+        },
+        {
+            "name": "dists/AppSample2/js/XML2JSON-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/NotFound.controller.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/NotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/NotAllowed.controller.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/NotAllowed-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/Master.controller.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/Master-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/ListSelector.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/ListSelector-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/ErrorHandler.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/ErrorHandler-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/DetailObjectNotFound.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/DetailObjectNotFound.controller.js"
+        },
+        {
+            "name": "dists/AppSample3/i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "dists/AppSample2/controller/DetailObjectNotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/Detail.controller.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/Detail-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/BaseController.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/App.controller.js"
+        },
+        {
+            "name": "dists/AppSample2/controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/conf/env.js"
+        },
+        {
+            "name": "dists/AppSample2/conf/env-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/utils/Utils.js"
+        },
+        {
+            "name": "dists/AppSample1/utils/Utils-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/model/models.js"
+        },
+        {
+            "name": "dists/AppSample1/model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/model/individualFormatter.js"
+        },
+        {
+            "name": "dists/AppSample1/model/individualFormatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/model/formatter.js"
+        },
+        {
+            "name": "dists/AppSample1/model/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/model/JsonModelManager.js"
+        },
+        {
+            "name": "dists/AppSample1/model/JsonModelManager-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/js/jwtAuthApp.js"
+        },
+        {
+            "name": "dists/AppSample1/js/jwtAuthApp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/js/XML2JSON.js"
+        },
+        {
+            "name": "dists/AppSample1/js/XML2JSON-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/js/Validator.js"
+        },
+        {
+            "name": "dists/AppSample1/js/Validator-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/ObjectDetail.controller.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/ObjectDetail-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/NotFound.controller.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/NotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/NotAllowed.controller.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/NotAllowed-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/Master.controller.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/Master-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/ErrorHandler.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/ErrorHandler-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/DetailObjectNotFound.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/DetailObjectNotFound.controller.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/DetailObjectNotFound-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/DetailObjectNotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/Detail.controller.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/Detail-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/BaseController.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/App.controller.js"
+        },
+        {
+            "name": "dists/AppSample1/controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/conf/env.js"
+        },
+        {
+            "name": "dists/AppSample1/conf/env-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/Component.js"
+        },
+        {
+            "name": "dists/AppSample4/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample4/Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/Component.js"
+        },
+        {
+            "name": "dists/AppSample3/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample3/Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/Component.js"
+        },
+        {
+            "name": "dists/AppSample2/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample2/Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/Component.js"
+        },
+        {
+            "name": "dists/AppSample1/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample1/Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "localService/mockserver.js"
+        },
+        {
+            "name": "js/jwtAuth.js"
+        },
+        {
+            "name": "js/Validator.js"
+        },
+        {
+            "name": "controller/Password.controller.js"
+        },
+        {
+            "name": "controller/Login.controller.js"
+        },
+        {
+            "name": "controller/Home.controller.js"
+        },
+        {
+            "name": "controller/ErrorSuccess.controller.js"
+        },
+        {
+            "name": "controller/BaseController.js"
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "conf/env.js"
+        },
+        {
+            "name": "bootstrap/standalone.js"
+        },
+        {
+            "name": "bootstrap/sandbox.js"
+        },
+        {
+            "name": "bootstrap/language.js"
+        },
+        {
+            "name": "bootstrap/favicon.js"
+        },
+        {
+            "name": "bootstrap/config.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "dists/AppSample4/utils/Utils-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/utils/ControlHelper-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/model/models-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/model/individualFormatter-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/model/formatter-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/js/jwtAuthApp-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/js/XML2JSON-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/Worklist-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/Object-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/NotFound-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/ErrorHandler-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/BaseController-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/controller/App-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/control/InfiniteWizard-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/config/env-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/utils/Utils-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/model/models-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/model/individualFormatter-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/model/formatter-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/js/jwtAuthApp-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/NotFound-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/Master-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/ListSelector-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/ErrorHandler-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/DetailObjectNotFound-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/DetailObjectNotFound-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/Detail-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/BaseController-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/controller/App-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/conf/env-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/model/models-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/model/individualFormatter-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/model/formatter-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/js/jwtAuthApp-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/js/XML2JSON-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/NotFound-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/NotAllowed-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/Master-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/ListSelector-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/ErrorHandler-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/DetailObjectNotFound-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/DetailObjectNotFound-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/Detail-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/BaseController-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/controller/App-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/conf/env-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/utils/Utils-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/model/models-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/model/individualFormatter-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/model/formatter-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/model/JsonModelManager-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/js/jwtAuthApp-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/js/XML2JSON-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/js/Validator-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/ObjectDetail-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/NotFound-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/NotAllowed-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/Master-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/ErrorHandler-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/DetailObjectNotFound-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/DetailObjectNotFound-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/Detail-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/BaseController-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/controller/App-dbg-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/conf/env-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/Component-preload-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample4/Component-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/Component-preload-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample3/Component-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/Component-preload-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample2/Component-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/Component-preload-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "dists/AppSample1/Component-dbg-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "localService/mockserver-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "js/jwtAuth-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "js/Validator-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Password-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Login-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Home-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/ErrorSuccess-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "conf/env-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "bootstrap/standalone-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "bootstrap/sandbox-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "bootstrap/language-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "bootstrap/favicon-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "bootstrap/config-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "dists/AppSample1/view/fragment/DialogRegexSelector.fragment.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/fragment/DialogIconSelector.fragment.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/fragment/AddForm.fragment.xml"
+        },
+        {
+            "name": "dists/AppSample4/view/Worklist.view.xml"
+        },
+        {
+            "name": "dists/AppSample4/view/ObjectNotFound.view.xml"
+        },
+        {
+            "name": "dists/AppSample4/view/Object.view.xml"
+        },
+        {
+            "name": "dists/AppSample4/view/NotFound.view.xml"
+        },
+        {
+            "name": "dists/AppSample4/view/App.view.xml"
+        },
+        {
+            "name": "dists/AppSample4/css/style.css"
+        },
+        {
+            "name": "dists/AppSample3/view/ViewSettingsDialog.fragment.xml"
+        },
+        {
+            "name": "dists/AppSample3/view/NotFound.view.xml"
+        },
+        {
+            "name": "dists/AppSample3/view/Master.view.xml"
+        },
+        {
+            "name": "dists/AppSample3/view/DialogSurveySelector.fragment.xml"
+        },
+        {
+            "name": "dists/AppSample3/view/DetailObjectNotFound.view.xml"
+        },
+        {
+            "name": "dists/AppSample3/view/Detail.view.xml"
+        },
+        {
+            "name": "dists/AppSample3/view/App.view.xml"
+        },
+        {
+            "name": "dists/AppSample3/images/Person.png"
+        },
+        {
+            "name": "dists/AppSample3/css/style.css"
+        },
+        {
+            "name": "dists/AppSample2/view/NotFound.view.xml"
+        },
+        {
+            "name": "dists/AppSample2/view/NotAllowed.view.xml"
+        },
+        {
+            "name": "dists/AppSample2/view/Master.view.xml"
+        },
+        {
+            "name": "dists/AppSample2/view/DetailObjectNotFound.view.xml"
+        },
+        {
+            "name": "dists/AppSample2/view/Detail.view.xml"
+        },
+        {
+            "name": "dists/AppSample2/view/App.view.xml"
+        },
+        {
+            "name": "dists/AppSample2/css/style.css"
+        },
+        {
+            "name": "dists/AppSample1/view/ViewSettingsDialog.fragment.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/ObjectDetail.view.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/NotFound.view.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/NotAllowed.view.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/Master.view.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/DetailObjectNotFound.view.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/Detail.view.xml"
+        },
+        {
+            "name": "dists/AppSample1/view/App.view.xml"
+        },
+        {
+            "name": "dists/AppSample1/css/style.css"
+        },
+        {
+            "name": "view/dialogs/PassUpdateDialog.fragment.xml"
+        },
+        {
+            "name": "view/dialogs/CimtInfoDialog.fragment.xml"
+        },
+        {
+            "name": "dists/AppSample4/manifest-bundle.zip"
+        },
+        {
+            "name": "dists/AppSample3/manifest-bundle.zip"
+        },
+        {
+            "name": "dists/AppSample2/manifest-bundle.zip"
+        },
+        {
+            "name": "dists/AppSample1/manifest-bundle.zip"
+        },
+        {
+            "name": "css/fonts/icomoon.woff"
+        },
+        {
+            "name": "css/fonts/icomoon.ttf"
+        },
+        {
+            "name": "css/fonts/icomoon.svg"
+        },
+        {
+            "name": "css/fonts/icomoon.eot"
+        },
+        {
+            "name": "view/Success.view.xml"
+        },
+        {
+            "name": "view/Password.view.xml"
+        },
+        {
+            "name": "view/Login.view.xml"
+        },
+        {
+            "name": "view/Home.view.xml"
+        },
+        {
+            "name": "view/Error.view.xml"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "images/sign.svg"
+        },
+        {
+            "name": "images/sign.png"
+        },
+        {
+            "name": "images/sapBackgroundImage.svg"
+        },
+        {
+            "name": "images/mjzsoft.svg"
+        },
+        {
+            "name": "images/mjzsoft.jpg"
+        },
+        {
+            "name": "images/flower_anim.gif"
+        },
+        {
+            "name": "images/en.png"
+        },
+        {
+            "name": "images/de.png"
+        },
+        {
+            "name": "icon/favicon.ico"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "appconfig/README.md"
+        },
+        {
+            "name": "WEB-INF/web.xml"
+        },
+        {
+            "name": "index.html"
+        }
+    ]
+}

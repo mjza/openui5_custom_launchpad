@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<SelectDialog id="formDialog" noDataText="{i18n>noSurveyData}" title="{i18n>titleSurveyDialog}" search="handleSearch"
+		liveChange="liveSearch" confirm="handleCloseDialog" items="{path: '/FormSet', sorter : { path : 'Name' }}">
+		<StandardListItem title="{Name}" iconDensityAware="false" iconInset="false" type="Active"
+			description="{i18n>colValidTo} { path:'ValidTo', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium'} }"/>
+	</SelectDialog>
+</core:FragmentDefinition>

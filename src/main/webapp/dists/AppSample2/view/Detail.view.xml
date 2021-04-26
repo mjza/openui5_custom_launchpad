@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View controllerName="com.mjzsoft.QuestionnaireStatistics.controller.Detail" xmlns="sap.m" xmlns:semantic="sap.f.semantic"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc">
+	<semantic:SemanticPage id="detailPage" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}" toggleHeaderOnTitleClick="false"
+		class="sapUiNoContentPadding">
+		<semantic:titleHeading>
+			<VBox>
+				<HBox>
+					<core:Icon src="{path: 'Icon/Source'}" size="2em" class="sapUiSmallMarginEnd" tooltip="{i18n>formIcon}"/>
+					<VBox alignItems="Start" alignContent="SpaceAround">
+						<Title text="{Name}" level="H2"/>
+						<ObjectStatus text="{= (${Universal} ? ${i18n>statePublic} : ${i18n>statePrivate}) }" state="{= (${Universal} ? 'Success' : 'Warning') }"/>
+					</VBox>
+				</HBox>
+				<Text text="{i18n>labelValidFrom} { path:'ValidFrom', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium' }}"/>
+				<Text text="{i18n>labelValidTo} { path:'ValidTo', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium' }}"/>
+			</VBox>
+		</semantic:titleHeading>
+		<semantic:content>
+			<VBox id="StatContainer"/>
+		</semantic:content>
+		<semantic:closeAction>
+			<semantic:CloseAction id="closeColumn" press=".onCloseDetailPress"/>
+		</semantic:closeAction>
+		<semantic:fullScreenAction>
+			<semantic:FullScreenAction id="enterFullScreen" press=".toggleFullScreen"
+				visible="{= !${device>/system/phone} &amp;&amp; !${appView>/actionButtonsInfo/midColumn/fullScreen}}"/>
+		</semantic:fullScreenAction>
+		<semantic:exitFullScreenAction>
+			<semantic:ExitFullScreenAction id="exitFullScreen" press=".toggleFullScreen"
+				visible="{= !${device>/system/phone} &amp;&amp; ${appView>/actionButtonsInfo/midColumn/fullScreen}}"/>
+		</semantic:exitFullScreenAction>
+	</semantic:SemanticPage>
+</mvc:View>

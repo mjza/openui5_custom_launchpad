@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!-- https://olingo.apache.org/doc/odata2/tutorials/jparedefinemetadata.html -->
+<JPAEDMMappingModel
+	xmlns="http://www.apache.org/olingo/odata2/jpa/processor/api/model/mapping">
+	<PersistenceUnit name="Model">
+		<EDMSchemaNamespace>com.mjzsoft</EDMSchemaNamespace>
+		<JPAEntityTypes>		
+			<JPAEntityType name="Permission" exclude="true"/>
+			<JPAEntityType name="RefreshToken" exclude="true"/>
+			<JPAEntityType name="PasswordResetToken" exclude="true"/>
+			<JPAEntityType name="EmailVerificationToken" exclude="true"/>
+			<JPAEntityType name="UserDevice" exclude="true"/>
+			<JPAEntityType name="Role">
+				<EDMEntityType>Role</EDMEntityType>
+				<EDMEntitySet>RoleSet</EDMEntitySet>
+				<JPARelationships>
+					<JPARelationship name="users">Users</JPARelationship>
+				</JPARelationships>				
+			</JPAEntityType>
+			<JPAEntityType name="User">
+				<EDMEntityType>User</EDMEntityType>
+				<EDMEntitySet>UserSet</EDMEntitySet>
+				<JPAAttributes>
+					<JPAAttribute name="password" exclude="true"/>
+				</JPAAttributes>
+				<JPARelationships>
+					<JPARelationship name="roles">Roles</JPARelationship>
+					<JPARelationship name="answers">Answers</JPARelationship>				
+					<JPARelationship name="surveys">Surveys</JPARelationship>
+				</JPARelationships>				
+			</JPAEntityType>
+			<!-- Put your codes after here -->
+			<JPAEntityType name="Action">
+				<EDMEntityType>Action</EDMEntityType>
+				<EDMEntitySet>ActionSet</EDMEntitySet>
+				<JPARelationships>
+					<JPARelationship name="conditions">Conditions</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Operator">
+				<EDMEntityType>Operator</EDMEntityType>
+				<EDMEntitySet>OperatorSet</EDMEntitySet>
+				<JPARelationships>
+					<JPARelationship name="conditions">Conditions</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Answer">
+				<EDMEntityType>Answer</EDMEntityType>
+				<EDMEntitySet>AnswerSet</EDMEntitySet>
+				<JPAAttributes>
+					<JPAAttribute name="option">OptionId</JPAAttribute>
+					<JPAAttribute name="question">QuestionId</JPAAttribute>
+					<JPAAttribute name="user">UserId</JPAAttribute>
+				</JPAAttributes>				
+				<JPARelationships>
+					<JPARelationship name="option">Option</JPARelationship>
+					<JPARelationship name="question">Question</JPARelationship>
+					<JPARelationship name="user">User</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Qtype">
+				<EDMEntityType>Qtype</EDMEntityType>
+				<EDMEntitySet>QtypeSet</EDMEntitySet>
+				<JPARelationships>
+					<JPARelationship name="questions">Questions</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Question">
+				<EDMEntityType>Question</EDMEntityType>
+				<EDMEntitySet>QuestionSet</EDMEntitySet>
+				<JPAAttributes>
+					<JPAAttribute name="form">FormId</JPAAttribute>
+					<JPAAttribute name="qtype">QtypeId</JPAAttribute>
+				</JPAAttributes>				
+				<JPARelationships>
+					<JPARelationship name="form">Form</JPARelationship>
+					<JPARelationship name="qtype">Qtype</JPARelationship>
+					<JPARelationship name="answers">Answers</JPARelationship>
+					<JPARelationship name="conditions1">SourceConditions</JPARelationship>
+					<JPARelationship name="conditions2">TargetConditions</JPARelationship>
+					<JPARelationship name="options">Options</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>			
+			<JPAEntityType name="Option">
+				<EDMEntityType>Option</EDMEntityType>
+				<EDMEntitySet>OptionSet</EDMEntitySet>
+				<JPAAttributes>
+					<JPAAttribute name="question">QuestionId</JPAAttribute>
+				</JPAAttributes>				
+				<JPARelationships>
+					<JPARelationship name="question">Question</JPARelationship>
+					<JPARelationship name="answers">Answers</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Icon">
+				<EDMEntityType>Icon</EDMEntityType>
+				<EDMEntitySet>IconSet</EDMEntitySet>
+				<JPARelationships>
+					<JPARelationship name="forms">Forms</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Survey">
+				<EDMEntityType>Survey</EDMEntityType>
+				<EDMEntitySet>SurveySet</EDMEntitySet>
+				<JPAAttributes>
+					<JPAAttribute name="form">FormId</JPAAttribute>
+					<JPAAttribute name="user">UserId</JPAAttribute>
+				</JPAAttributes>				
+				<JPARelationships>
+					<JPARelationship name="form">Form</JPARelationship>
+					<JPARelationship name="user">User</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Condition">
+				<EDMEntityType>Condition</EDMEntityType>
+				<EDMEntitySet>ConditionSet</EDMEntitySet>
+				<JPAAttributes>
+					<JPAAttribute name="action">ActionId</JPAAttribute>
+					<JPAAttribute name="operator">OperatorId</JPAAttribute>
+					<JPAAttribute name="question1">QuestionSourceId</JPAAttribute>
+					<JPAAttribute name="question2">QuestionTargetId</JPAAttribute>
+				</JPAAttributes>				
+				<JPARelationships>
+					<JPARelationship name="action">Action</JPARelationship>
+					<JPARelationship name="operator">Operator</JPARelationship>
+					<JPARelationship name="question1">QuestionSource</JPARelationship>
+					<JPARelationship name="question2">QuestionTarget</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Form">
+				<EDMEntityType>Form</EDMEntityType>
+				<EDMEntitySet>FormSet</EDMEntitySet>
+				<JPAAttributes>
+					<JPAAttribute name="icon">IconId</JPAAttribute>
+				</JPAAttributes>				
+				<JPARelationships>
+					<JPARelationship name="icon">Icon</JPARelationship>
+					<JPARelationship name="questions">Questions</JPARelationship>
+					<JPARelationship name="surveys">Surveys</JPARelationship>
+				</JPARelationships>
+			</JPAEntityType>
+			<JPAEntityType name="Regex">
+				<EDMEntityType>Regex</EDMEntityType>
+				<EDMEntitySet>RegexSet</EDMEntitySet>
+			</JPAEntityType>
+		</JPAEntityTypes>
+	</PersistenceUnit>
+</JPAEDMMappingModel>

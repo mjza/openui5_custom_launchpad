@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog title="{i18n>home_contactDialogTitle}" contentWidth="400px">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm id="SimpleFormDisplay354wide" editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<MessageStrip visible="true" text="{i18n>home_contactFormInfo}" showIcon="true" showCloseButton="false" customIcon="sap-icon://customfont/cimt"/>
+						<Label text="{i18n>home_email}" design="Bold"/>
+						<Text text="info@mjzsoft.com"/>
+						<Label text="{i18n>home_tell}" design="Bold"/>
+						<Text text="+49 221"/>
+						<Label text="{i18n>home_address}" design="Bold"/>
+						<Text text="MJZSoft Co."/>
+						<Text text="{i18n>home_addressInfo}"/>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<buttons>
+			<Button icon="sap-icon://sys-cancel-2" tooltip="{i18n>login_rejectButton}" press=".dialogCloseBtnPress"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

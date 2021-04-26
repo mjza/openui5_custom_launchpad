@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:View xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns="sap.m"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" controllerName="com.mjzsoft.Mjzsoft0Launchpad.controller.Login"
+	beforeRendering="onBeforeRendering" afterRendering="onAfterRendering">
+	<Page showNavButton="false" showSubHeader="false" class="auth-page-backGround" enableScrolling="true" showHeader="false">
+		<content>
+			<VBox width="100%" direction="Column" fitContainer="true" justifyContent="Center" alignContent="Center">
+				<items>
+					<HBox width="100%" justifyContent="Center">
+						<items>
+							<f:Form editable="true">
+								<f:formContainers>
+									<f:FormContainer>
+										<f:formElements>
+											<f:FormElement>
+												<f:fields>
+													<MessageStrip visible="{= ${loginView>/success} !== null }" text="{loginView>/success}" showIcon="true" showCloseButton="true"
+														type="Success" close="onSuccessStripClosed"/>
+													<MessageStrip visible="{= ${loginView>/error} !== null }" text="{loginView>/error}" showIcon="true" showCloseButton="true" type="Error"
+														close="onErrorStripClosed"/>
+												</f:fields>
+											</f:FormElement>
+										</f:formElements>
+									</f:FormContainer>
+								</f:formContainers>
+								<f:layout>
+									<f:ResponsiveGridLayout/>
+								</f:layout>
+							</f:Form>
+						</items>
+					</HBox>
+					<!--Login-->
+					<HBox width="100%" justifyContent="Center" visible="{= ${loginView>/flow} === 'login' }">
+						<items>
+							<f:Form editable="true" width="300px">
+								<f:toolbar>
+									<Toolbar>
+										<content>
+											<core:Icon src="sap-icon://log" color="Positive" tooltip="{i18n>login_loginTitle}" size="2em"/>
+											<Title text="{i18n>login_loginTitle}" level="H3" titleStyle="H3"/>
+										</content>
+									</Toolbar>
+								</f:toolbar>
+								<f:formContainers>
+									<f:FormContainer>
+										<f:formElements>
+											<f:FormElement label="{i18n>login_credentialsPlaceholder}">
+												<f:fields>
+													<Input type="Email" placeholder="{i18n>login_usernamePlaceholder}"
+														value="{ path:'loginView>/user', type: 'sap.ui.model.type.String', constraints : { search: '^\\w+[\\w-+\\.]*\\@\\w+([-\\.]\\w+)*\\.[a-zA-Z]{2,}$' }}"
+														valueStateText="{i18n>login_emailValueState}" showSuggestion="false" fieldWidth="100%" required="true" fieldGroupIds="Login"  submit=".onLoginButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Input type="Password" placeholder="{i18n>login_passwordPlaceholder}"
+														value="{ path:'loginView>/pass', type: 'sap.ui.model.type.String', constraints : { minLength : 6, maxLength : 13 }}" showSuggestion="false"
+														fieldWidth="100%" required="true" fieldGroupIds="Login" submit=".onLoginButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement label="{i18n>login_languageSelect}">
+												<f:fields>
+													<Select items="{path:'languages>/'}" selectedKey="{loginView>/lang}" change="onLanguageChange" width="100%">
+														<items>
+															<core:Item xmlns:core="sap.ui.core" key="{languages>id}" text="{languages>name}" app:langRtl="{languages>rtl}"/>
+														</items>
+													</Select>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Button type="Accept" text="{i18n>login_loginButton}" press=".onLoginButtonPress" width="100%" icon="sap-icon://paper-plane"/>
+												</f:fields>
+											</f:FormElement>
+										</f:formElements>
+									</f:FormContainer>
+								</f:formContainers>
+								<f:layout>
+									<f:ResponsiveGridLayout/>
+								</f:layout>
+							</f:Form>
+						</items>
+					</HBox>
+					<!--Register-->
+					<HBox width="100%" justifyContent="Center" visible="{= ${loginView>/flow} === 'register' }">
+						<items>
+							<f:Form editable="true" width="300px">
+								<f:toolbar>
+									<Toolbar>
+										<content>
+											<core:Icon src="sap-icon://add-employee" color="Critical" tooltip="{i18n>login_registerTitle}" size="2em"/>
+											<Title text="{i18n>login_registerTitle}" level="H3" titleStyle="H3"/>
+										</content>
+									</Toolbar>
+								</f:toolbar>
+								<f:formContainers>
+									<f:FormContainer>
+										<f:formElements>
+											<f:FormElement label="{i18n>login_fullnamePlaceholder}">
+												<f:fields>
+													<Input value="{loginView>/firstname}" placeholder="{i18n>login_firstnamePlaceholder}" showSuggestion="false" fieldWidth="100%"
+														required="false" fieldGroupIds="Register" submit=".onRegisterButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Input value="{loginView>/lastname}" placeholder="{i18n>login_lastnamePlaceholder}" showSuggestion="false" fieldWidth="100%"
+														required="false" fieldGroupIds="Register" submit=".onRegisterButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement label="{i18n>login_credentialsPlaceholder}">
+												<f:fields>
+													<Input id="register_email" type="Email"
+														value="{ path:'loginView>/email', type: 'sap.ui.model.type.String', constraints : { search: '^\\w+[\\w-+\\.]*\\@\\w+([-\\.]\\w+)*\\.[a-zA-Z]{2,}$' }}"
+														valueStateText="{i18n>login_emailValueState}" placeholder="{i18n>login_emailPlaceholder}" showSuggestion="false" fieldWidth="100%"
+														required="true" fieldGroupIds="Register" change="onEmailChanged" submit=".onRegisterButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Input type="Password"
+														value="{ path:'loginView>/pass', type: 'sap.ui.model.type.String', constraints : { search: '^(?=.*[a-zöäüß])(?=.*[A-ZÖÄÜ])(?=.*\\d)(?!.*\\s)(?=.*[#$@!%*?~&amp;])[A-Za-zöäüßÖÄÜ\\d#$@!%*?~&amp;]{8,30}$' }}"
+														valueStateText="{i18n>login_passwordValueState}" placeholder="{i18n>login_passwordPlaceholder}" showSuggestion="false" fieldWidth="100%"
+														required="true" fieldGroupIds="Register" submit=".onRegisterButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Input id="confirmPass" type="Password"
+														value="{ path:'loginView>/confirmPass', type: 'sap.ui.model.type.String', constraints : { search: '^(?=.*[a-zöäüß])(?=.*[A-ZÖÄÜ])(?=.*\\d)(?!.*\\s)(?=.*[#$@!%*?~&amp;])[A-Za-zöäüßÖÄÜ\\d#$@!%*?~&amp;]{8,30}$' }}"
+														valueStateText="{i18n>login_passwordValueState}" placeholder="{i18n>login_repeatPasswordPlaceholder}" showSuggestion="false" fieldWidth="100%"
+														required="true" fieldGroupIds="Register" change=".onConfirmPassChanged" submit=".onRegisterButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement label="{loginView>/captchaText}">
+												<f:fields>
+													<Input type="Number"
+														value="{ path:'loginView>/captcha', type: 'sap.ui.model.type.String', constraints : { search: '^(0|-*[1-9]+[0-9]*)$' }}"
+														placeholder="{i18n>login_captchaPlaceholder}" showSuggestion="false" fieldWidth="100%" required="true" fieldGroupIds="Register" submit=".onRegisterButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Button type="Accept" text="{i18n>login_registerButton}" press=".onRegisterButtonPress" width="100%" icon="sap-icon://paper-plane"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Button type="Reject" text="{i18n>login_rejectButton}" press=".onRejectButtonPress" width="100%" icon="sap-icon://sys-cancel"/>
+												</f:fields>
+											</f:FormElement>
+										</f:formElements>
+									</f:FormContainer>
+								</f:formContainers>
+								<f:layout>
+									<f:ResponsiveGridLayout/>
+								</f:layout>
+							</f:Form>
+						</items>
+					</HBox>
+					<!--Reset-->
+					<HBox width="100%" justifyContent="Center" visible="{= ${loginView>/flow} === 'reset' }">
+						<items>
+							<f:Form editable="true" width="300px">
+								<f:toolbar>
+									<Toolbar>
+										<content>
+											<core:Icon src="sap-icon://unlocked" color="Negative" tooltip="{i18n>login_resetTitle}" size="2em"/>
+											<Title text="{i18n>login_resetTitle}" level="H3" titleStyle="H3"/>
+										</content>
+									</Toolbar>
+								</f:toolbar>
+								<f:formContainers>
+									<f:FormContainer>
+										<f:formElements>
+											<f:FormElement label="{i18n>login_emailPlaceholder}">
+												<f:fields>
+													<Input type="Email"
+														value="{ path:'loginView>/email', type: 'sap.ui.model.type.String', constraints : { search: '^\\w+[\\w-+\\.]*\\@\\w+([-\\.]\\w+)*\\.[a-zA-Z]{2,}$' }}"
+														valueStateText="{i18n>login_emailValueState}" placeholder="{i18n>login_emailPlaceholder}" showSuggestion="false" fieldWidth="100%"
+														required="true" fieldGroupIds="Reset" submit=".onResetButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement label="{loginView>/captchaText}">
+												<f:fields>
+													<Input type="Number"
+														value="{ path:'loginView>/captcha', type: 'sap.ui.model.type.String', constraints : { search: '^(0|-*[1-9]+[0-9]*)$' }}"
+														placeholder="{i18n>login_captchaPlaceholder}" showSuggestion="false" fieldWidth="100%" required="true" fieldGroupIds="Reset"
+														submit=".onResetButtonPress"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Button type="Accept" text="{i18n>login_resetButton}" press=".onResetButtonPress" width="100%" icon="sap-icon://paper-plane"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Button type="Reject" text="{i18n>login_rejectButton}" press=".onRejectButtonPress" width="100%" icon="sap-icon://sys-cancel"/>
+												</f:fields>
+											</f:FormElement>
+										</f:formElements>
+									</f:FormContainer>
+								</f:formContainers>
+								<f:layout>
+									<f:ResponsiveGridLayout/>
+								</f:layout>
+							</f:Form>
+						</items>
+					</HBox>
+				</items>
+			</VBox>
+		</content>
+		<footer>
+			<Toolbar class="sapContrast sapContrastPlus" width="100%" design="Solid">
+				<content>
+					<core:Icon src="sap-icon://add-employee" size="2em" color="Critical" tooltip="{i18n>login_registerView}" press=".onChangeViewPress"
+						app:key="register"/>
+					<ToolbarSpacer/>
+					<core:Icon src="sap-icon://log" size="2em" color="Positive" tooltip="{i18n>login_loginView}" press=".onChangeViewPress" app:key="login"/>
+					<ToolbarSpacer/>
+					<core:Icon src="sap-icon://unlocked" size="2em" color="Negative" tooltip="{i18n>login_resetPassView}" press=".onChangeViewPress"
+						app:key="reset"/>
+				</content>
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

@@ -1,0 +1,656 @@
+id,name,source
+IC1,Accelerated,sap-icon://accelerated
+IC2,Accept,sap-icon://accept
+IC3,Accidental leave,sap-icon://accidental-leave
+IC4,Account,sap-icon://account
+IC5,Accounting document verification,sap-icon://accounting-document-verification
+IC6,Action,sap-icon://action
+IC7,Action settings,sap-icon://action-settings
+IC8,Activate,sap-icon://activate
+IC9,Activities,sap-icon://activities
+IC10,Activity 2,sap-icon://activity-2
+IC11,Activity assigned to goal,sap-icon://activity-assigned-to-goal
+IC12,Activity individual,sap-icon://activity-individual
+IC13,Activity items,sap-icon://activity-items
+IC14,Add,sap-icon://add
+IC15,Add activity,sap-icon://add-activity
+IC16,Add activity 2,sap-icon://add-activity-2
+IC17,Add contact,sap-icon://add-contact
+IC18,Add coursebook,sap-icon://add-coursebook
+IC19,Add document,sap-icon://add-document
+IC20,Add employee,sap-icon://add-employee
+IC21,Add equipment,sap-icon://add-equipment
+IC22,Add favorite,sap-icon://add-favorite
+IC23,Add filter,sap-icon://add-filter
+IC24,Add folder,sap-icon://add-folder
+IC25,Add photo,sap-icon://add-photo
+IC26,Add process,sap-icon://add-process
+IC27,Add product,sap-icon://add-product
+IC28,Address book,sap-icon://address-book
+IC29,Addresses,sap-icon://addresses
+IC30,Alert,sap-icon://alert
+IC31,Along stacked chart,sap-icon://along-stacked-chart
+IC32,Alphabetical order,sap-icon://alphabetical-order
+IC33,Appear offline,sap-icon://appear-offline
+IC34,Appointment,sap-icon://appointment
+IC35,Appointment 2,sap-icon://appointment-2
+IC36,Approvals,sap-icon://approvals
+IC37,Area chart,sap-icon://area-chart
+IC38,Arobase,sap-icon://arobase
+IC39,Arrow bottom,sap-icon://arrow-bottom
+IC40,Arrow down,sap-icon://arrow-down
+IC41,Arrow left,sap-icon://arrow-left
+IC42,Arrow right,sap-icon://arrow-right
+IC43,Arrow top,sap-icon://arrow-top
+IC44,Attachment,sap-icon://attachment
+IC45,Attachment audio,sap-icon://attachment-audio
+IC46,Attachment e pub,sap-icon://attachment-e-pub
+IC47,Attachment html,sap-icon://attachment-html
+IC48,Attachment photo,sap-icon://attachment-photo
+IC49,Attachment text file,sap-icon://attachment-text-file
+IC50,Attachment video,sap-icon://attachment-video
+IC51,Attachment zip file,sap-icon://attachment-zip-file
+IC52,Away,sap-icon://away
+IC53,Back to top,sap-icon://back-to-top
+IC54,Background,sap-icon://background
+IC55,Badge,sap-icon://badge
+IC56,Bar chart,sap-icon://bar-chart
+IC57,Bar code,sap-icon://bar-code
+IC58,Basket,sap-icon://basket
+IC59,Batch payments,sap-icon://batch-payments
+IC60,Bbyd active sales,sap-icon://bbyd-active-sales
+IC61,Bbyd dashboard,sap-icon://bbyd-dashboard
+IC62,Bed,sap-icon://bed
+IC63,Begin,sap-icon://begin
+IC64,Bell,sap-icon://bell
+IC65,Blank tag,sap-icon://blank-tag
+IC66,Blank tag 2,sap-icon://blank-tag-2
+IC67,Blur,sap-icon://blur
+IC68,Bo strategy management,sap-icon://bo-strategy-management
+IC69,Bold text,sap-icon://bold-text
+IC70,Bookmark,sap-icon://bookmark
+IC71,Border,sap-icon://border
+IC72,Broken link,sap-icon://broken-link
+IC73,Browse folder,sap-icon://browse-folder
+IC74,Bubble chart,sap-icon://bubble-chart
+IC75,Building,sap-icon://building
+IC76,Bullet text,sap-icon://bullet-text
+IC77,Burglary,sap-icon://burglary
+IC78,Bus public transport,sap-icon://bus-public-transport
+IC79,Business by design,sap-icon://business-by-design
+IC80,Business card,sap-icon://business-card
+IC81,Business objects experience,sap-icon://business-objects-experience
+IC82,Business objects explorer,sap-icon://business-objects-explorer
+IC83,Business objects mobile,sap-icon://business-objects-mobile
+IC84,Business one,sap-icon://business-one
+IC85,Busy,sap-icon://busy
+IC86,Calendar,sap-icon://calendar
+IC87,Call,sap-icon://call
+IC88,Camera,sap-icon://camera
+IC89,Cancel,sap-icon://cancel
+IC90,Cancel maintenance,sap-icon://cancel-maintenance
+IC91,Cancel share,sap-icon://cancel-share
+IC92,Capital projects,sap-icon://capital-projects
+IC93,Car rental,sap-icon://car-rental
+IC94,Card,sap-icon://card
+IC95,Cargo train,sap-icon://cargo-train
+IC96,Cart,sap-icon://cart
+IC97,Cart 2,sap-icon://cart-2
+IC98,Cart 3,sap-icon://cart-3
+IC99,Cart 4,sap-icon://cart-4
+IC100,Cart 5,sap-icon://cart-5
+IC101,Cart approval,sap-icon://cart-approval
+IC102,Cart full,sap-icon://cart-full
+IC103,Cause,sap-icon://cause
+IC104,Chain link,sap-icon://chain-link
+IC105,Chalkboard,sap-icon://chalkboard
+IC106,Chart axis,sap-icon://chart-axis
+IC107,Chart table view,sap-icon://chart-table-view
+IC108,Chart tree map,sap-icon://Chart-Tree-Map
+IC109,Check availability,sap-icon://check-availability
+IC110,Checklist,sap-icon://checklist
+IC111,Checklist 2,sap-icon://checklist-2
+IC112,Checklist item,sap-icon://checklist-item
+IC113,Checklist item 2,sap-icon://checklist-item-2
+IC114,Chevron phase,sap-icon://chevron-phase
+IC115,Chevron phase 2,sap-icon://chevron-phase-2
+IC116,Choropleth chart,sap-icon://choropleth-chart
+IC117,Circle task,sap-icon://circle-task
+IC118,Circle task 2,sap-icon://circle-task-2
+IC119,Citizen connect,sap-icon://citizen-connect
+IC120,Clear filter,sap-icon://clear-filter
+IC121,Clinical order,sap-icon://clinical-order
+IC122,Clinical tast tracker,sap-icon://clinical-tast-tracker
+IC123,Close command field,sap-icon://close-command-field
+IC124,Cloud,sap-icon://cloud
+IC125,Co,sap-icon://co
+IC126,Collaborate,sap-icon://collaborate
+IC127,Collapse,sap-icon://collapse
+IC128,Collapse all,sap-icon://collapse-all
+IC129,Collapse group,sap-icon://collapse-group
+IC130,Collections insight,sap-icon://collections-insight
+IC131,Collections management,sap-icon://collections-management
+IC132,Collision,sap-icon://collision
+IC133,Color fill,sap-icon://color-fill
+IC134,Column chart dual axis,sap-icon://column-chart-dual-axis
+IC135,Combine,sap-icon://combine
+IC136,Comment,sap-icon://comment
+IC137,Commission check,sap-icon://commission-check
+IC138,Company view,sap-icon://company-view
+IC139,Compare,sap-icon://compare
+IC140,Compare 2,sap-icon://compare-2
+IC141,Competitor,sap-icon://competitor
+IC142,Complete,sap-icon://complete
+IC143,Connected,sap-icon://connected
+IC144,Contacts,sap-icon://contacts
+IC145,Copy,sap-icon://copy
+IC146,Course book,sap-icon://course-book
+IC147,Course program,sap-icon://course-program
+IC148,Create,sap-icon://create
+IC149,Create entry time,sap-icon://create-entry-time
+IC150,Create form,sap-icon://create-form
+IC151,Create leave request,sap-icon://create-leave-request
+IC152,Create session,sap-icon://create-session
+IC153,Credit card,sap-icon://credit-card
+IC154,Crm sales,sap-icon://crm-sales
+IC155,Crm service manager,sap-icon://crm-service-manager
+IC156,Crop,sap-icon://crop
+IC157,Crossed line chart,sap-icon://crossed-line-chart
+IC158,Curriculum,sap-icon://curriculum
+IC159,Cursor arrow,sap-icon://cursor-arrow
+IC160,Customer,sap-icon://customer
+IC161,Customer and contacts,sap-icon://customer-and-contacts
+IC162,Customer and supplier,sap-icon://customer-and-supplier
+IC163,Customer briefing,sap-icon://customer-briefing
+IC164,Customer financial fact sheet,sap-icon://customer-financial-fact-sheet
+IC165,Customer history,sap-icon://customer-history
+IC166,Customer order entry,sap-icon://customer-order-entry
+IC167,Customer view,sap-icon://customer-view
+IC168,Customize,sap-icon://customize
+IC169,Database,sap-icon://database
+IC170,Date time,sap-icon://date-time
+IC171,Decision,sap-icon://decision
+IC172,Decline,sap-icon://decline
+IC173,Decrease line height,sap-icon://decrease-line-height
+IC174,Delete,sap-icon://delete
+IC175,Desktop mobile,sap-icon://desktop-mobile
+IC176,Detail view,sap-icon://detail-view
+IC177,Developer settings,sap-icon://developer-settings
+IC178,Dimension,sap-icon://dimension
+IC179,Disconnected,sap-icon://disconnected
+IC180,Discussion,sap-icon://discussion
+IC181,Discussion 2,sap-icon://discussion-2
+IC182,Dishwasher,sap-icon://dishwasher
+IC183,Display,sap-icon://display
+IC184,Display more,sap-icon://display-more
+IC185,Doc attachment,sap-icon://doc-attachment
+IC186,Doctor,sap-icon://doctor
+IC187,Document,sap-icon://document
+IC188,Document text,sap-icon://document-text
+IC189,Documents,sap-icon://documents
+IC190,Donut chart,sap-icon://donut-chart
+IC191,Down,sap-icon://down
+IC192,Download,sap-icon://download
+IC193,Download from cloud,sap-icon://download-from-cloud
+IC194,Draw rectangle,sap-icon://draw-rectangle
+IC195,Drill down,sap-icon://drill-down
+IC196,Drill up,sap-icon://drill-up
+IC197,Drop down list,sap-icon://drop-down-list
+IC198,Dropdown,sap-icon://dropdown
+IC199,Duplicate,sap-icon://duplicate
+IC200,E care,sap-icon://e-care
+IC201,E learning,sap-icon://e-learning
+IC202,Eam work order,sap-icon://eam-work-order
+IC203,Edit,sap-icon://edit
+IC204,Edit outside,sap-icon://edit-outside
+IC205,Education,sap-icon://education
+IC206,Electrocardiogram,sap-icon://electrocardiogram
+IC207,Electronic medical record,sap-icon://electronic-medical-record
+IC208,Email,sap-icon://email
+IC209,Email read,sap-icon://email-read
+IC210,Employee,sap-icon://employee
+IC211,Employee approvals,sap-icon://employee-approvals
+IC212,Employee lookup,sap-icon://employee-lookup
+IC213,Employee pane,sap-icon://employee-pane
+IC214,Employee rejections,sap-icon://employee-rejections
+IC215,End user experience monitoring,sap-icon://end-user-experience-monitoring
+IC216,Endoscopy,sap-icon://endoscopy
+IC217,Energy saving lightbulb,sap-icon://energy-saving-lightbulb
+IC218,Enter more,sap-icon://enter-more
+IC219,Eraser,sap-icon://eraser
+IC220,Error,sap-icon://error
+IC221,Example,sap-icon://example
+IC222,Excel attachment,sap-icon://excel-attachment
+IC223,Exit full screen,sap-icon://exit-full-screen
+IC224,Expand,sap-icon://expand
+IC225,Expand all,sap-icon://expand-all
+IC226,Expand group,sap-icon://expand-group
+IC227,Expense report,sap-icon://expense-report
+IC228,Explorer,sap-icon://explorer
+IC229,Factory,sap-icon://factory
+IC230,Fallback,sap-icon://fallback
+IC231,Family care,sap-icon://family-care
+IC232,Family protection,sap-icon://family-protection
+IC233,Favorite,sap-icon://favorite
+IC234,Favorite list,sap-icon://favorite-list
+IC235,Fax machine,sap-icon://fax-machine
+IC236,Feed,sap-icon://feed
+IC237,Feedback,sap-icon://feedback
+IC238,Feeder arrow,sap-icon://feeder-arrow
+IC239,Filter,sap-icon://filter
+IC240,Filter analytics,sap-icon://filter-analytics
+IC241,Filter facets,sap-icon://filter-facets
+IC242,Filter fields,sap-icon://filter-fields
+IC243,Flag,sap-icon://flag
+IC244,Flight,sap-icon://flight
+IC245,Fob watch,sap-icon://fob-watch
+IC246,Folder,sap-icon://folder
+IC247,Folder blank,sap-icon://folder-blank
+IC248,Folder full,sap-icon://folder-full
+IC249,Form,sap-icon://form
+IC250,Forward,sap-icon://forward
+IC251,Fridge,sap-icon://fridge
+IC252,Full screen,sap-icon://full-screen
+IC253,Full stacked chart,sap-icon://full-stacked-chart
+IC254,Full stacked column chart,sap-icon://full-stacked-column-chart
+IC255,Functional location,sap-icon://functional-location
+IC256,Future,sap-icon://future
+IC257,Fx,sap-icon://fx
+IC258,Gantt bars,sap-icon://gantt-bars
+IC259,General leave request,sap-icon://general-leave-request
+IC260,Generate shortcut,sap-icon://generate-shortcut
+IC261,Geographic bubble chart,sap-icon://geographic-bubble-chart
+IC262,Globe,sap-icon://globe
+IC263,Goal,sap-icon://goal
+IC264,Goalseek,sap-icon://goalseek
+IC265,Grid,sap-icon://grid
+IC266,Group,sap-icon://group
+IC267,Group 2,sap-icon://group-2
+IC268,Header,sap-icon://header
+IC269,Heading1,sap-icon://heading1
+IC270,Heading2,sap-icon://heading2
+IC271,Heading3,sap-icon://heading3
+IC272,Headset,sap-icon://headset
+IC273,Heating cooling,sap-icon://heating-cooling
+IC274,Heatmap chart,sap-icon://heatmap-chart
+IC275,Hello world,sap-icon://hello-world
+IC276,Hide,sap-icon://hide
+IC277,Hint,sap-icon://hint
+IC278,History,sap-icon://history
+IC279,Home,sap-icon://home
+IC280,Home share,sap-icon://home-share
+IC281,Horizontal bar chart,sap-icon://horizontal-bar-chart
+IC282,Horizontal bar chart 2,sap-icon://horizontal-bar-chart-2
+IC283,Horizontal bullet chart,sap-icon://horizontal-bullet-chart
+IC284,Horizontal combination chart,sap-icon://horizontal-combination-chart
+IC285,Horizontal grip,sap-icon://horizontal-grip
+IC286,Horizontal stacked chart,sap-icon://horizontal-stacked-chart
+IC287,Horizontal waterfall chart,sap-icon://horizontal-waterfall-chart
+IC288,Hr approval,sap-icon://hr-approval
+IC289,Idea wall,sap-icon://idea-wall
+IC290,Image viewer,sap-icon://image-viewer
+IC291,Inbox,sap-icon://inbox
+IC292,Incident,sap-icon://incident
+IC293,Incoming call,sap-icon://incoming-call
+IC294,Increase line height,sap-icon://increase-line-height
+IC295,Indent,sap-icon://indent
+IC296,Initiative,sap-icon://initiative
+IC297,Inspect,sap-icon://inspect
+IC298,Inspect down,sap-icon://inspect-down
+IC299,Inspection,sap-icon://inspection
+IC300,Instance,sap-icon://instance
+IC301,Insurance car,sap-icon://insurance-car
+IC302,Insurance house,sap-icon://insurance-house
+IC303,Insurance life,sap-icon://insurance-life
+IC304,Internet browser,sap-icon://internet-browser
+IC305,Inventory,sap-icon://inventory
+IC306,Ipad,sap-icon://ipad
+IC307,Ipad 2,sap-icon://ipad-2
+IC308,Iphone,sap-icon://iphone
+IC309,Iphone 2,sap-icon://iphone-2
+IC310,It host,sap-icon://it-host
+IC311,It instance,sap-icon://it-instance
+IC312,It system,sap-icon://it-system
+IC313,Italic text,sap-icon://italic-text
+IC314,Jam,sap-icon://jam
+IC315,Journey arrive,sap-icon://journey-arrive
+IC316,Journey change,sap-icon://journey-change
+IC317,Journey depart,sap-icon://journey-depart
+IC318,Key,sap-icon://key
+IC319,Key user settings,sap-icon://key-user-settings
+IC320,Keyboard and mouse,sap-icon://keyboard-and-mouse
+IC321,Kpi corporate performance,sap-icon://kpi-corporate-performance
+IC322,Kpi managing my area,sap-icon://kpi-managing-my-area
+IC323,Lab,sap-icon://lab
+IC324,Laptop,sap-icon://laptop
+IC325,Lateness,sap-icon://lateness
+IC326,Lead,sap-icon://lead
+IC327,Lead outdated,sap-icon://lead-outdated
+IC328,Leads,sap-icon://leads
+IC329,Learning assistant,sap-icon://learning-assistant
+IC330,Legend,sap-icon://legend
+IC331,Less,sap-icon://less
+IC332,Letter,sap-icon://letter
+IC333,Lightbulb,sap-icon://lightbulb
+IC334,Line chart,sap-icon://line-chart
+IC335,Line chart dual axis,sap-icon://line-chart-dual-axis
+IC336,Line chart time axis,sap-icon://line-chart-time-axis
+IC337,Line charts,sap-icon://line-charts
+IC338,List,sap-icon://list
+IC339,Loan,sap-icon://loan
+IC340,Locate me,sap-icon://locate-me
+IC341,Locked,sap-icon://locked
+IC342,Log,sap-icon://log
+IC343,Machine,sap-icon://machine
+IC344,Manager,sap-icon://manager
+IC345,Manager insight,sap-icon://manager-insight
+IC346,Map,sap-icon://map
+IC347,Map 2,sap-icon://map-2
+IC348,Map 3,sap-icon://map-3
+IC349,Marketing campaign,sap-icon://marketing-campaign
+IC350,Master task triangle,sap-icon://master-task-triangle
+IC351,Master task triangle 2,sap-icon://master-task-triangle-2
+IC352,Meal,sap-icon://meal
+IC353,Measure,sap-icon://measure
+IC354,Measurement document,sap-icon://measurement-document
+IC355,Measuring point,sap-icon://measuring-point
+IC356,Media forward,sap-icon://media-forward
+IC357,Media pause,sap-icon://media-pause
+IC358,Media play,sap-icon://media-play
+IC359,Media reverse,sap-icon://media-reverse
+IC360,Media rewind,sap-icon://media-rewind
+IC361,Meeting room,sap-icon://meeting-room
+IC362,Megamenu,sap-icon://megamenu
+IC363,Menu,sap-icon://menu
+IC364,Menu2,sap-icon://menu2
+IC365,Message error,sap-icon://message-error
+IC366,Message information,sap-icon://message-information
+IC367,Message popup,sap-icon://message-popup
+IC368,Message success,sap-icon://message-success
+IC369,Message warning,sap-icon://message-warning
+IC370,Microphone,sap-icon://microphone
+IC371,Mileage,sap-icon://mileage
+IC372,Minimize,sap-icon://minimize
+IC373,Mirrored task circle,sap-icon://mirrored-task-circle
+IC374,Mirrored task circle 2,sap-icon://mirrored-task-circle-2
+IC375,Money bills,sap-icon://money-bills
+IC376,Monitor payments,sap-icon://monitor-payments
+IC377,Move,sap-icon://move
+IC378,Mri scan,sap-icon://mri-scan
+IC379,Multi select,sap-icon://multi-select
+IC380,Multiple bar chart,sap-icon://multiple-bar-chart
+IC381,Multiple line chart,sap-icon://multiple-line-chart
+IC382,Multiple pie chart,sap-icon://multiple-pie-chart
+IC383,Multiple radar chart,sap-icon://multiple-radar-chart
+IC384,Multiselect all,sap-icon://multiselect-all
+IC385,Multiselect none,sap-icon://multiselect-none
+IC386,My sales order,sap-icon://my-sales-order
+IC387,My view,sap-icon://my-view
+IC388,Nav back,sap-icon://nav-back
+IC389,Navigation down arrow,sap-icon://navigation-down-arrow
+IC390,Navigation left arrow,sap-icon://navigation-left-arrow
+IC391,Navigation right arrow,sap-icon://navigation-right-arrow
+IC392,Navigation up arrow,sap-icon://navigation-up-arrow
+IC393,Negative,sap-icon://negative
+IC394,Netweaver business client,sap-icon://Netweaver-business-client
+IC395,Newspaper,sap-icon://newspaper
+IC396,Notes,sap-icon://notes
+IC397,Notification,sap-icon://notification
+IC398,Notification 2,sap-icon://notification-2
+IC399,Number sign,sap-icon://number-sign
+IC400,Numbered text,sap-icon://numbered-text
+IC401,Nurse,sap-icon://nurse
+IC402,Nutrition activity,sap-icon://nutrition-activity
+IC403,Official service,sap-icon://official-service
+IC404,Offsite work,sap-icon://offsite-work
+IC405,Open command field,sap-icon://open-command-field
+IC406,Open folder,sap-icon://open-folder
+IC407,Opportunities,sap-icon://opportunities
+IC408,Opportunity,sap-icon://opportunity
+IC409,Order status,sap-icon://order-status
+IC410,Org chart,sap-icon://org-chart
+IC411,Outbox,sap-icon://outbox
+IC412,Outdent,sap-icon://outdent
+IC413,Outgoing call,sap-icon://outgoing-call
+IC414,Overflow,sap-icon://overflow
+IC415,Overlay,sap-icon://overlay
+IC416,Overview chart,sap-icon://overview-chart
+IC417,Paging,sap-icon://paging
+IC418,Paid leave,sap-icon://paid-leave
+IC419,Palette,sap-icon://palette
+IC420,Paper plane,sap-icon://paper-plane
+IC421,Passenger train,sap-icon://passenger-train
+IC422,Past,sap-icon://past
+IC423,Paste,sap-icon://paste
+IC424,Pause,sap-icon://pause
+IC425,Payment approval,sap-icon://payment-approval
+IC426,Pdf attachment,sap-icon://pdf-attachment
+IC427,Pdf reader,sap-icon://pdf-reader
+IC428,Pending,sap-icon://pending
+IC429,Per diem,sap-icon://per-diem
+IC430,Performance,sap-icon://performance
+IC431,Permission,sap-icon://permission
+IC432,Person placeholder,sap-icon://person-placeholder
+IC433,Personnel view,sap-icon://personnel-view
+IC434,Pharmacy,sap-icon://pharmacy
+IC435,Phone,sap-icon://phone
+IC436,Photo voltaic,sap-icon://photo-voltaic
+IC437,Physical activity,sap-icon://physical-activity
+IC438,Picture,sap-icon://picture
+IC439,Pie chart,sap-icon://pie-chart
+IC440,Pipeline analysis,sap-icon://pipeline-analysis
+IC441,Pixelate,sap-icon://pixelate
+IC442,Play,sap-icon://play
+IC443,Pool,sap-icon://pool
+IC444,Popup window,sap-icon://popup-window
+IC445,Positive,sap-icon://positive
+IC446,Post,sap-icon://post
+IC447,Ppt attachment,sap-icon://ppt-attachment
+IC448,Present,sap-icon://present
+IC449,Primary key,sap-icon://primary-key
+IC450,Print,sap-icon://print
+IC451,Private,sap-icon://private
+IC452,Process,sap-icon://process
+IC453,Product,sap-icon://product
+IC454,Program triangles,sap-icon://program-triangles
+IC455,Program triangles 2,sap-icon://program-triangles-2
+IC456,Project definition triangle,sap-icon://project-definition-triangle
+IC457,Project definition triangle 2,sap-icon://project-definition-triangle-2
+IC458,Projector,sap-icon://projector
+IC459,Provision,sap-icon://provision
+IC460,Pull down,sap-icon://pull-down
+IC461,Pushpin off,sap-icon://pushpin-off
+IC462,Pushpin on,sap-icon://pushpin-on
+IC463,Puzzle,sap-icon://puzzle
+IC464,Quality issue,sap-icon://quality-issue
+IC465,Question mark,sap-icon://question-mark
+IC466,Radar chart,sap-icon://radar-chart
+IC467,Receipt,sap-icon://receipt
+IC468,Record,sap-icon://record
+IC469,Redo,sap-icon://redo
+IC470,Refresh,sap-icon://refresh
+IC471,Repost,sap-icon://repost
+IC472,Request,sap-icon://request
+IC473,Reset,sap-icon://reset
+IC474,Resize,sap-icon://resize
+IC475,Resize corner,sap-icon://resize-corner
+IC476,Resize horizontal,sap-icon://resize-horizontal
+IC477,Resize vertical,sap-icon://resize-vertical
+IC478,Response,sap-icon://response
+IC479,Responsive,sap-icon://responsive
+IC480,Restart,sap-icon://restart
+IC481,Retail store,sap-icon://retail-store
+IC482,Retail store manager,sap-icon://retail-store-manager
+IC483,Rhombus milestone,sap-icon://rhombus-milestone
+IC484,Rhombus milestone 2,sap-icon://rhombus-milestone-2
+IC485,Role,sap-icon://role
+IC486,Sales document,sap-icon://sales-document
+IC487,Sales notification,sap-icon://sales-notification
+IC488,Sales order,sap-icon://sales-order
+IC489,Sales order item,sap-icon://sales-order-item
+IC490,Sales quote,sap-icon://sales-quote
+IC491,Sap box,sap-icon://sap-box
+IC492,Sap logo shape,sap-icon://sap-logo-shape
+IC493,Sap ui5,sap-icon://sap-ui5
+IC494,Save,sap-icon://save
+IC495,Scatter chart,sap-icon://scatter-chart
+IC496,Scissors,sap-icon://scissors
+IC497,Screen split one,sap-icon://screen-split-one
+IC498,Screen split three,sap-icon://screen-split-three
+IC499,Screen split two,sap-icon://screen-split-two
+IC500,Search,sap-icon://search
+IC501,Settings,sap-icon://settings
+IC502,Share,sap-icon://share
+IC503,Share 2,sap-icon://share-2
+IC504,Shelf,sap-icon://shelf
+IC505,Shield,sap-icon://shield
+IC506,Shipping status,sap-icon://shipping-status
+IC507,Shortcut,sap-icon://shortcut
+IC508,Show,sap-icon://show
+IC509,Show edit,sap-icon://show-edit
+IC510,Signature,sap-icon://signature
+IC511,Simple payment,sap-icon://simple-payment
+IC512,Simulate,sap-icon://simulate
+IC513,Slim arrow down,sap-icon://slim-arrow-down
+IC514,Slim arrow left,sap-icon://slim-arrow-left
+IC515,Slim arrow right,sap-icon://slim-arrow-right
+IC516,Slim arrow up,sap-icon://slim-arrow-up
+IC517,Soccer,sap-icon://soccer
+IC518,Soccor,sap-icon://soccor
+IC519,Sonography,sap-icon://sonography
+IC520,Sort,sap-icon://sort
+IC521,Sort ascending,sap-icon://sort-ascending
+IC522,Sort descending,sap-icon://sort-descending
+IC523,Sorting ranking,sap-icon://sorting-ranking
+IC524,Sound,sap-icon://sound
+IC525,Sound loud,sap-icon://sound-loud
+IC526,Sound off,sap-icon://sound-off
+IC527,Source code,sap-icon://source-code
+IC528,Split,sap-icon://split
+IC529,Status completed,sap-icon://status-completed
+IC530,Status critical,sap-icon://status-critical
+IC531,Status error,sap-icon://status-error
+IC532,Status in process,sap-icon://status-in-process
+IC533,Status inactive,sap-icon://status-inactive
+IC534,Status negative,sap-icon://status-negative
+IC535,Status positive,sap-icon://status-positive
+IC536,Step,sap-icon://step
+IC537,Stethoscope,sap-icon://stethoscope
+IC538,Stop,sap-icon://stop
+IC539,Strikethrough,sap-icon://strikethrough
+IC540,Study leave,sap-icon://study-leave
+IC541,Subway train,sap-icon://subway-train
+IC542,Suitcase,sap-icon://suitcase
+IC543,Supplier,sap-icon://supplier
+IC544,Survey,sap-icon://survey
+IC545,Switch classes,sap-icon://switch-classes
+IC546,Switch views,sap-icon://switch-views
+IC547,Synchronize,sap-icon://synchronize
+IC548,Syntax,sap-icon://syntax
+IC549,Syringe,sap-icon://syringe
+IC550,Sys add,sap-icon://sys-add
+IC551,Sys back,sap-icon://sys-back
+IC552,Sys back 2,sap-icon://sys-back-2
+IC553,Sys cancel,sap-icon://sys-cancel
+IC554,Sys cancel 2,sap-icon://sys-cancel-2
+IC555,Sys enter,sap-icon://sys-enter
+IC556,Sys enter 2,sap-icon://sys-enter-2
+IC557,Sys find,sap-icon://sys-find
+IC558,Sys find next,sap-icon://sys-find-next
+IC559,Sys first page,sap-icon://sys-first-page
+IC560,Sys help,sap-icon://sys-help
+IC561,Sys help 2,sap-icon://sys-help-2
+IC562,Sys last page,sap-icon://sys-last-page
+IC563,Sys minus,sap-icon://sys-minus
+IC564,Sys monitor,sap-icon://sys-monitor
+IC565,Sys next page,sap-icon://sys-next-page
+IC566,Sys prev page,sap-icon://sys-prev-page
+IC567,System exit,sap-icon://system-exit
+IC568,System exit 2,sap-icon://system-exit-2
+IC569,Table chart,sap-icon://table-chart
+IC570,Table column,sap-icon://table-column
+IC571,Table row,sap-icon://table-row
+IC572,Table view,sap-icon://table-view
+IC573,Tag,sap-icon://tag
+IC574,Tag cloud chart,sap-icon://tag-cloud-chart
+IC575,Tags,sap-icon://tags
+IC576,Target group,sap-icon://target-group
+IC577,Task,sap-icon://task
+IC578,Taxi,sap-icon://taxi
+IC579,Technical object,sap-icon://technical-object
+IC580,Temperature,sap-icon://temperature
+IC581,Text,sap-icon://text
+IC582,Text align center,sap-icon://text-align-center
+IC583,Text align justified,sap-icon://text-align-justified
+IC584,Text align left,sap-icon://text-align-left
+IC585,Text align right,sap-icon://text-align-right
+IC586,Text color,sap-icon://text-color
+IC587,Text formatting,sap-icon://text-formatting
+IC588,Theater,sap-icon://theater
+IC589,Thing type,sap-icon://thing-type
+IC590,Thumb down,sap-icon://thumb-down
+IC591,Thumb up,sap-icon://thumb-up
+IC592,Time account,sap-icon://time-account
+IC593,Time entry request,sap-icon://time-entry-request
+IC594,Time overtime,sap-icon://time-overtime
+IC595,Timesheet,sap-icon://timesheet
+IC596,To be reviewed,sap-icon://to-be-reviewed
+IC597,Toaster down,sap-icon://toaster-down
+IC598,Toaster top,sap-icon://toaster-top
+IC599,Toaster up,sap-icon://toaster-up
+IC600,Tools opportunity,sap-icon://tools-opportunity
+IC601,Touch,sap-icon://touch
+IC602,Travel expense,sap-icon://travel-expense
+IC603,Travel expense report,sap-icon://travel-expense-report
+IC604,Travel itinerary,sap-icon://travel-itinerary
+IC605,Travel request,sap-icon://travel-request
+IC606,Tree,sap-icon://tree
+IC607,Trend down,sap-icon://trend-down
+IC608,Trend up,sap-icon://trend-up
+IC609,Trip report,sap-icon://trip-report
+IC610,Two keys,sap-icon://two-keys
+IC611,Ui notifications,sap-icon://ui-notifications
+IC612,Umbrella,sap-icon://umbrella
+IC613,Underline text,sap-icon://underline-text
+IC614,Undo,sap-icon://undo
+IC615,Unfavorite,sap-icon://unfavorite
+IC616,Unlocked,sap-icon://unlocked
+IC617,Unpaid leave,sap-icon://unpaid-leave
+IC618,Unwired,sap-icon://unwired
+IC619,Up,sap-icon://up
+IC620,Upload,sap-icon://upload
+IC621,Upload to cloud,sap-icon://upload-to-cloud
+IC622,Upstacked chart,sap-icon://upstacked-chart
+IC623,User edit,sap-icon://user-edit
+IC624,User settings,sap-icon://user-settings
+IC625,Validate,sap-icon://validate
+IC626,Value help,sap-icon://value-help
+IC627,Vds file,sap-icon://vds-file
+IC628,Vehicle repair,sap-icon://vehicle-repair
+IC629,Vertical bar chart,sap-icon://vertical-bar-chart
+IC630,Vertical bar chart 2,sap-icon://vertical-bar-chart-2
+IC631,Vertical bullet chart,sap-icon://vertical-bullet-chart
+IC632,Vertical grip,sap-icon://vertical-grip
+IC633,Vertical stacked chart,sap-icon://vertical-stacked-chart
+IC634,Vertical waterfall chart,sap-icon://vertical-waterfall-chart
+IC635,Video,sap-icon://video
+IC636,Visits,sap-icon://visits
+IC637,Waiver,sap-icon://waiver
+IC638,Wallet,sap-icon://wallet
+IC639,Warning,sap-icon://warning
+IC640,Warning2,sap-icon://warning2
+IC641,Washing machine,sap-icon://washing-machine
+IC642,Weather proofing,sap-icon://weather-proofing
+IC643,Web cam,sap-icon://web-cam
+IC644,Widgets,sap-icon://widgets
+IC645,Windows doors,sap-icon://windows-doors
+IC646,Work history,sap-icon://work-history
+IC647,Workflow tasks,sap-icon://workflow-tasks
+IC648,World,sap-icon://world
+IC649,Wounds doc,sap-icon://wounds-doc
+IC650,Wrench,sap-icon://wrench
+IC651,Write new,sap-icon://write-new
+IC652,Write new document,sap-icon://write-new-document
+IC653,X ray,sap-icon://x-ray
+IC654,Zoom in,sap-icon://zoom-in
+IC655,Zoom out,sap-icon://zoom-out

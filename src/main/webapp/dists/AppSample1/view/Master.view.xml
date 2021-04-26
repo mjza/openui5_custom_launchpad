@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View controllerName="com.mjzsoft.QuestionnaireBuilder.controller.Master" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core">
+	<Page title="{i18n>masterTitle}" enableScrolling="false" floatingFooter="true" class="sapUiNoContentPadding">
+		<content>
+			<VBox height="100%" width="100%">
+				<MessageStrip busy="{masterView>/busy}" type="Information" showIcon="true" customIcon="sap-icon://survey"
+					text="{parts:['masterView>/masterCounterTitle']}" class="mjzsoftMessageInfo"/>
+				<SearchField id="searchField" tooltip="{i18n>masterSearchTooltip}" search=".onSearch" liveChange="onSearchLiveChange"
+					class="mjzsoftSearchNoPadding"/>
+				<ScrollContainer id="masterScrollContainer" height="100%" vertical="true" visible="{= !${masterView>/showNoDataMessage} }"
+					class="sapUiResponsiveContentPadding">
+					<FlexBox id="flexboxId" busy="{masterView>/busy}" justifyContent="Center" alignItems="Center" wrap="Wrap"
+						class="sapUiTinyMarginLeft sapUiTinyMarginTop sapUiLargeMarginBottom" direction="{appView>/flexBoxDirection}"
+						items="{ path: '/FormSet', parameters: {expand: 'Questions,Icon'}, sorter: { path: 'Name', descending: false }, filters: [ {path : 'Deleted', operator : 'EQ', value1 : false}], events: { dataReceived: '.onFormsReceived' } }">
+						<GenericTile header="{path:'Name'}" headerImage="{Icon/Source}"
+							tooltip="{path: 'Name'} &#xD;{=${Questions}.length } {path: 'i18n>Questions'}" press="onPressItem"
+							class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+							<TileContent unit="{i18n>Questions}" footerColor="Critical">
+								<content>
+									<NumericContent value="{ path:'Questions', formatter:'com.mjzsoft.QuestionnaireBuilder.model.individualFormatter.formQuestionsCounter' }"
+										withMargin="false"/>
+								</content>
+							</TileContent>
+						</GenericTile>
+					</FlexBox>
+				</ScrollContainer>
+				<VBox width="100%" height="100%" alignItems="Center" direction="Column" justifyContent="Center" visible="{masterView>/showNoDataMessage}">
+					<core:Icon src="sap-icon://product" size="6rem" color="Critical" tooltip="{i18n>masterListCreateHint}"/>
+					<Title text="{i18n>masterListNoDataText}" titleStyle="H1" level="H1"/>
+					<Text text="{i18n>masterListCreateHint}"/>
+				</VBox>
+			</VBox>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<Button icon="sap-icon://add" type="Transparent" tooltip="{i18n>AddFormTooltip}" enabled="{= !${appView>/editMode} }"
+					press="onCreateFromBtnPress"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://delete" type="Transparent" tooltip="{i18n>DeleteFormTooltip}"
+					enabled="{= ${masterView>/enableDelete} &amp;&amp; !${appView>/editMode} }" press="onDeleteFromBtnPress"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

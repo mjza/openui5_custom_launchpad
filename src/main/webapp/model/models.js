@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/model/json/JSONModel","sap/ui/Device","com/mjzsoft/Mjzsoft0Launchpad/conf/env"],function(e,n,a){"use strict";return{createDeviceModel:function(){var a=new e(n);a.setDefaultBindingMode("OneWay");return a},createLanguageModel:function(){var n=new e(a.languages);n.setDefaultBindingMode("OneWay");return n}}});

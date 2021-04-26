@@ -1,0 +1,2 @@
+id,firstName,lastName,photoContent,username,password,email,active,emailVerified,roles,roles
+1,Mahdi,Ansari,"",ma@mjzsoft.com,$2a$10$3EFzvH2wXoy9EeG5.gTSpuebiFfLWnv6Ayxo//krCMu63ktHFPKb.,ma@mjzsoft.com,true,true,1,2

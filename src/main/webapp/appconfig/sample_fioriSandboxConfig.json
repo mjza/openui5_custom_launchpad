@@ -1,0 +1,18 @@
+{
+    "applications" : { 
+        "AppSample1-display" : {
+            "additionalInformation" : "SAPUI5.Component=com.mjzsoft.AppSample1",
+            "applicationType" : "URL",
+            "url" : "./webapp/dists/AppSample1",
+            "title" : "Subtitle 1",
+            "description" : "Info 1"
+        },
+        "AppSample2-display" : {
+            "additionalInformation" : "SAPUI5.Component=com.mjzsoft.AppSample2",
+            "applicationType" : "URL",
+            "url" : "./webapp/dists/AppSample2",
+            "title" : "Subtitle 2",
+            "description" : "Info 2"
+        }
+    }
+}

@@ -1,0 +1,83 @@
+id,answer,sequence,question,value,defaultAnswer,deleted
+1,Lazy,1,3,1,FALSE,FALSE
+2,Hard-working,2,3,3,FALSE,FALSE
+3,Hating,3,3,5,FALSE,FALSE
+4,Lovely,4,3,7,FALSE,FALSE
+5,No idea!,5,3,9,TRUE,FALSE
+6,Car,1,9,9,FALSE,FALSE
+7,Train,2,9,9,FALSE,FALSE
+8,Bike,3,9,9,FALSE,FALSE
+9,Walking,4,9,9,FALSE,FALSE
+10,Very often,1,10,9,FALSE,FALSE
+11,Not that much,2,10,9,TRUE,FALSE
+12,Mac device,1,13,9,FALSE,FALSE
+13,Windows device,2,13,9,FALSE,FALSE
+14,Not at all motivated,1,18,1,FALSE,FALSE
+15,Not sure,2,18,3,FALSE,FALSE
+16,Not very motivated,3,18,4,FALSE,FALSE
+17,Somewhat motivated,4,18,5,FALSE,FALSE
+18,Very motivated,5,18,7,FALSE,FALSE
+19,Too many,1,19,1,FALSE,FALSE
+20,Enough,2,19,3,FALSE,FALSE
+21,Not enough,3,19,5,FALSE,FALSE
+22,Less than a year,1,21,1,FALSE,FALSE
+23,1-2 years,2,21,3,FALSE,FALSE
+24,3-5 years,3,21,5,FALSE,FALSE
+25,6-10 years,4,21,7,FALSE,FALSE
+26,More than 10 years,5,21,9,FALSE,FALSE
+27,Non-supervisory Staff,1,22,1,FALSE,FALSE
+28,Supervisor,2,22,3,FALSE,FALSE
+29,Functional Manager,3,22,5,FALSE,FALSE
+30,Department Manager,4,22,7,FALSE,FALSE
+31,Senior Management/Director/Vice President,5,22,9,FALSE,FALSE
+32,My supervisor is knowledgeable about my work,1,25,8,FALSE,FALSE
+33,My supervisor gives me fair reviews,2,25,8,FALSE,FALSE
+34,My supervisor is willing to promote me,3,25,8,FALSE,FALSE
+35,My supervisor trains me in whenever necessary,4,25,8,FALSE,FALSE
+36,My supervisor makes sure I have sufficient training,5,25,8,FALSE,FALSE
+37,Extremely Dissatisfied,1,27,1,FALSE,FALSE
+38,Very Dissatisfied,2,27,3,FALSE,FALSE
+39,Neither Satisfied nor Dissatisfied,3,27,5,FALSE,FALSE
+40,Very Satisfied,4,27,7,FALSE,FALSE
+41,Extremely Satisfied,5,27,9,FALSE,FALSE
+42,Extremely Comfortable,1,28,1,FALSE,FALSE
+43,Very Comfortable,2,28,3,FALSE,FALSE
+44,Somewhat Comfortable,-1,28,5,FALSE,TRUE
+45,Not So Comfortable,3,28,7,FALSE,FALSE
+46,Not At All Comfortable,-1,28,9,FALSE,TRUE
+47,Extremely Satisfied,1,29,1,FALSE,FALSE
+48,Quite Satisfied,2,29,3,FALSE,FALSE
+49,Somewhat Satisfied,3,29,5,FALSE,FALSE
+50,Neither Satisfied Nor Dissatisfied,4,29,7,FALSE,FALSE
+51,Somewhat Dissatisfied,5,29,9,FALSE,FALSE
+52,Quite Dissatisfied,6,29,11,FALSE,FALSE
+53,Extremely Dissatisfied,7,29,13,FALSE,FALSE
+54,Much Better,1,31,1,FALSE,FALSE
+55,Better,2,31,3,FALSE,FALSE
+56,The Same,3,31,5,FALSE,FALSE
+57,Worse,4,31,7,FALSE,FALSE
+58,Much Worse,5,31,9,FALSE,FALSE
+59,Extremely Satisfied,1,33,1,FALSE,FALSE
+60,Quite Satisfied,2,33,3,FALSE,FALSE
+61,Somewhat Satisfied,3,33,5,FALSE,FALSE
+62,Neither Satisfied Nor Dissatisfied,-1,33,7,FALSE,TRUE
+63,Somewhat Dissatisfied,-1,33,9,FALSE,TRUE
+64,Quite Dissatisfied,4,33,11,FALSE,FALSE
+65,Extremely Dissatisfied,5,33,13,FALSE,FALSE
+66,Implementation / Tutorials,1,39,1,FALSE,FALSE
+67,Project examples,2,39,3,FALSE,FALSE
+68,Procedure / Methodology,3,39,5,FALSE,FALSE
+69,Cost-benefit overview,4,39,7,FALSE,FALSE
+70,SAP S/4 HANA respectively SAP ERP,1,43,1,FALSE,FALSE
+71,SAP CAR,2,43,3,FALSE,FALSE
+72,SAP PO/PI,3,43,5,FALSE,FALSE
+73,SAP Solution Manager,4,43,7,FALSE,FALSE
+74,SAP CPI,5,43,9,FALSE,FALSE
+75,SAP Data Hub,6,43,11,FALSE,FALSE
+76,SAP Data Intelligence,7,43,13,FALSE,FALSE
+77,SAP Cloud DWH,8,43,15,FALSE,FALSE
+78,SAP BI,9,43,19,FALSE,FALSE
+79,SAP IBP,10,43,21,FALSE,FALSE
+80,SAP Cloud Platform,11,43,23,FALSE,FALSE
+81,SAP MDG,12,43,25,FALSE,FALSE
+82,"SAP Leonardo (IoT, AI, Block-chain...)",13,43,27,FALSE,FALSE

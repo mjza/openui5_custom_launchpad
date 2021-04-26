@@ -1,0 +1,36 @@
+/* For removing the borders in disabled mode*/
+
+.sapMInputBaseDisabledWrapper {
+	border: none;
+	background: none;
+}
+
+.sapMInputBaseDisabled {
+	opacity: 1.0;
+}
+
+.sapMPanelContent:not(.sapMPanelBGTransparent) {
+    border-bottom: none;
+}
+.sapMSltDisabled {
+	border: none;
+	opacity: 1.0;
+	background: none;
+}
+
+.sapMSltDisabled > .sapMSltArrow {
+	display: none;
+}
+
+
+.mjzsoftSelectedTileItem {
+	background-color: #b0e1f9;
+}
+
+.mjzsoftMessageInfo {
+	border: none;
+}
+
+.mjzsoftSearchNoPadding {
+	padding-top: 0 !important;
+}

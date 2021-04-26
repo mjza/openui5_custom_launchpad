@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:semantic="sap.f.semantic" xmlns:form="sap.ui.layout.form"
+	controllerName="com.mjzsoft.QuestionnaireBuilder.controller.ObjectDetail">
+	<semantic:SemanticPage showFooter="true" busy="{objectDetailView>/busy}" busyIndicatorDelay="{objectDetailView>/delay}"
+		class="sapUiNoContentPadding">
+		<semantic:titleHeading>
+			<HBox>
+				<core:Icon src="{path: 'QtypeId', formatter: '.formatter.getQuestionIcon'}" size="1em" tooltip="{i18n>Icon}" class="sapUiSmallMarginEnd"
+					color="Default"/>
+				<Title text="{objectDetailView>/title}"/>
+			</HBox>
+		</semantic:titleHeading>
+		<semantic:closeAction>
+			<semantic:CloseAction press="onPressCloseObjectPage"/>
+		</semantic:closeAction>
+		<semantic:content>
+			<VBox class="sapUiNoMarginTop" visible="{objectDetailView>/EditMode}">
+				<form:Form id="objectDetailFormId" editable="true" busy="{objectDetailView>/busy}">
+					<form:layout>
+						<form:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4"
+							emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+					</form:layout>
+					<form:formContainers>
+						<form:FormContainer>
+							<form:formElements>
+								<form:FormElement label="{i18n>QuestionType}">
+									<form:fields>
+										<Select id="questionTypeSelectId" items="{path:'/QtypeSet'}" selectedKey="{ path: 'QtypeId'}" enabled="{= ${objectDetailView>/createMode} }"
+											fieldGroupIds="fieldGroupItem" change="onQuestionTypeSelectChange">
+											<items>
+												<core:Item text="{Name}" key="{Id}"/>
+											</items>
+										</Select>
+									</form:fields>
+								</form:FormElement>
+								<form:FormElement label="{i18n>Mandatory}" visible="{= ${objectDetailView>/isMandatoryVisible} }">
+									<form:fields>
+										<Switch state="{ path:'Mandatory', formatter:'.formatter.booleanValue'}" enabled="{= ${objectDetailView>/editMode} }"
+											fieldGroupIds="fieldGroupItem">
+											<layoutData>
+												<FlexItemData growFactor="1"/>
+											</layoutData>
+										</Switch>
+									</form:fields>
+								</form:FormElement>
+								<form:FormElement label="{i18n>Question}">
+									<form:fields>
+										<TextArea value="{path: 'Question', type : 'sap.ui.model.type.String', constraints: {minLength:5, search: '^(?!.*?([\\?])\\1{1}).*' }}"
+											rows="5" required="true" enabled="{= ${objectDetailView>/editMode}}" fieldGroupIds="fieldGroupItem" liveChange="onInputLiveChange" cols="40"
+											growingMaxLines="3" width="100%"/>
+									</form:fields>
+								</form:FormElement>
+								<form:FormElement label="{i18n>Regex}" visible="{= (${QtypeId} === 'QT5') }">
+									<form:fields>
+										<Input id="regexInput" value="{path: 'Regex', type : 'sap.ui.model.type.String', constraints: { search: '' }}" required="false"
+											enabled="{= ${objectDetailView>/editMode}}" fieldGroupIds="fieldGroupItem" width="100%" showValueHelp="true"
+											showTableSuggestionValueHelp="false" valueHelpRequest="onRegexValueHelpPressed"/>
+									</form:fields>
+								</form:FormElement>
+							</form:formElements>
+						</form:FormContainer>
+					</form:formContainers>
+				</form:Form>
+				<Panel width="auto" expandable="true" expanded="true" visible="{= ${objectDetailView>/questionWithOptions} }">
+					<headerToolbar>
+						<Toolbar>
+							<Title text="{i18n>tableAnswerTitle}"/>
+							<ToolbarSpacer/>
+						</Toolbar>
+					</headerToolbar>
+					<content>
+						<Toolbar width="100%">
+							<content>
+								<ToolbarSpacer/>
+								<Button icon="sap-icon://add" type="Transparent" tooltip="{i18n>AddLabel}" enabled="{= ${objectDetailView>/tableEditMode} }"
+									press="tableAddBtnPress"/>
+								<Button icon="sap-icon://delete" type="Transparent" tooltip="{i18n>DeleteLabel}" enabled="{= ${objectDetailView>/tableEditMode} }"
+									press="tableDelBtnPress"/>
+							</content>
+						</Toolbar>
+						<VBox class="sapUiTableCnt">
+							<Table id="tableAnswers" mode="{ path: 'objectDetailView>/tableEditMode', formatter:'.formatter.tableModeObjectDetailView' }"
+								busyIndicatorDelay="0"
+								items="{ path: 'ObjectOptionsModel>/OptionSet', filters: [ {path : 'Deleted', operator : 'EQ', value1 : false}], sorter : { path : 'Sequence' } }">
+								<columns>
+									<Column width="50%">
+										<header>
+											<Label text="{i18n>tableAnswerColumnTitle}"/>
+										</header>
+									</Column>
+									<Column width="20%" hAlign="Center">
+										<header>
+											<Label text="{i18n>tableDefaultAnswerColumnTitle}"/>
+										</header>
+									</Column>
+									<Column width="20%" hAlign="Center">
+										<header>
+											<Label text="{i18n>tableReorderColumnTitle}"/>
+										</header>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Inactive">
+										<cells>
+											<Input value="{path: 'ObjectOptionsModel>Answer'}"
+												valueState="{path: 'ObjectOptionsModel>Answer', formatter:'.formatter.notEmptyValidation'}" enabled="{= ${objectDetailView>/editMode} }"
+												change=".onOptionAnswerChange"/>
+											<CheckBox selected="{path:'ObjectOptionsModel>DefaultAnswer', formatter:'.formatter.booleanValue'}"
+												enabled="{= ${objectDetailView>/editMode} }" select=".onOptionDefaultChange"/>
+											<HBox width="100%" alignItems="Center" justifyContent="Center">
+												<Button icon="sap-icon://arrow-top" type="Transparent" tooltip="{i18n>UpTooltip}" enabled="{= ${objectDetailView>/editMode} }"
+													press="tableUpBtnPress"/>
+												<Button icon="sap-icon://arrow-bottom" type="Transparent" tooltip="{i18n>DownTooltip}" enabled="{= ${objectDetailView>/editMode} }"
+													press="tableDownBtnPress"/>
+											</HBox>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</VBox>
+					</content>
+				</Panel>
+			</VBox>
+		</semantic:content>
+		<semantic:footerCustomActions>
+			<Button icon="sap-icon://edit" tooltip="{i18n>BtnEdit}" visible="{= !${objectDetailView>/editMode} }" press="onPressEdit"/>
+			<Button icon="sap-icon://save" tooltip="{i18n>BtnSave}" visible="{= ${objectDetailView>/editMode} }" press="onPressSaveEdit"/>
+			<Button icon="sap-icon://sys-cancel" tooltip="{i18n>BtnCancel}" visible="{= ${objectDetailView>/editMode} }" press="onPressCancel"/>
+		</semantic:footerCustomActions>
+	</semantic:SemanticPage>
+</mvc:View>

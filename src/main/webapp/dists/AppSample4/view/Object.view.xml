@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View controllerName="com.mjzsoft.Survey.controller.Object" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic"
+	xmlns:f="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+	<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false" class="sapUiNoContentPadding">
+		<semantic:titleHeading>
+			<VBox>
+				<HBox>
+					<VBox alignItems="Start" alignContent="SpaceAround">
+						<Title visible="{= ${viewModel>/isSurveyFinished}}" text="{i18n>titObjectHeader}"/>
+						<VBox>
+							<HBox visible="{= ${viewModel>/isSurveyFinished} !== true }">
+								<Label text="{i18n>txtValidFrom}" design="Bold"/>
+								<Label text="{ path:'Form/ValidFrom', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium' } }" class="sapUiTinyMarginBegin"/>
+							</HBox>
+							<HBox visible="{= ${viewModel>/isSurveyFinished} !== true }">
+								<Label text="{i18n>txtValidTo}" design="Bold"/>
+								<Label text="{ path:'Form/ValidTo', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium' } }" class="sapUiTinyMarginBegin"/>
+							</HBox>
+							<HBox visible="{= ${viewModel>/isSurveyFinished}}">
+								<Label text="{i18n>txtFinishedAt}" design="Bold"/>
+								<Label text="{ path:'DoneAt', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'medium' } }" class="sapUiTinyMarginBegin"/>
+							</HBox>
+						</VBox>
+					</VBox>
+				</HBox>
+			</VBox>
+		</semantic:titleHeading>
+		<semantic:headerContent class="sapUiNoContentPadding" pinnable="true">
+			<ObjectHeader title="{Form/Name}" icon="{viewModel>/icon}"></ObjectHeader>
+		</semantic:headerContent>
+		<semantic:content>
+			<layout:VerticalLayout id="idVerticalLayout" width="100%">
+				<!--	<f:Form class="sapUiLargeMarginBegin" id="idForm" visible="{viewModel>/isSurveyFinished}" editable="true">-->
+				<!--<f:layout>-->
+				<!--	<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"-->
+				<!--		emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>-->
+				<!--</f:layout>-->
+				<!--			<f:layout>-->
+				<!--	<f:ResponsiveGridLayout-->
+				<!--		labelSpanXL="3"-->
+				<!--		labelSpanL="3"-->
+				<!--		labelSpanM="3"-->
+				<!--		labelSpanS="12"-->
+				<!--		adjustLabelSpan="false"-->
+				<!--		emptySpanXL="4"-->
+				<!--		emptySpanL="4"-->
+				<!--		emptySpanM="4"-->
+				<!--		emptySpanS="0"-->
+				<!--		columnsXL="1"-->
+				<!--		columnsL="1"-->
+				<!--		columnsM="1"-->
+				<!--		singleContainerFullSize="false" />-->
+				<!--</f:layout>-->
+				<!--		<f:formContainers>-->
+				<!--			<f:FormContainer id="idContainer" class="sapUiSmallMargin">-->
+				<!--				<f:formElements></f:formElements>-->
+				<!--			</f:FormContainer>-->
+				<!--		</f:formContainers>-->
+				<!--	</f:Form>-->
+				<VBox class="sapUiMediumMarginBegin" id="idContainer"></VBox>
+			</layout:VerticalLayout>
+		</semantic:content>
+	</semantic:SemanticPage>
+</mvc:View>

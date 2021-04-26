@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<ViewSettingsDialog id="viewSettingsDialog" confirm=".onConfirmViewSettingsDialog">
+		<sortItems>
+			<ViewSettingsItem text="{i18n>masterSort1}" key="Name" selected="true"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

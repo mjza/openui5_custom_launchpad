@@ -1,0 +1,289 @@
+{
+	"services": {
+		"LaunchPage": {
+			"adapter": {
+				"config": {
+					"catalogs": [{
+						"id": "main_catalog",
+						"title": "Hauptanwendungskatalog",
+						"tiles": [{
+							"id": "toapp_ask_builder",
+							"title": "Fragebogen-Builder",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_00",
+								"title": "Fragebogen-Builder",
+								"info": "Umfragen",
+								"infoState": "Positive",
+								"numberValue": 1,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Erstelle Umfragen und Fragen",
+								"icon": "sap-icon://attachment-text-file",
+								"targetURL": "#Action-toapp_ask_builder"
+							}
+						}, {
+							"id": "toapp_ask_userSurvey",
+							"title": "Teilnehmer Umfragen",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_01",
+								"title": "Teilnehmer Umfragen",
+								"info": "Umfragen einem Benutzer zuweisen",
+								"infoState": "Positive",
+								"numberValue": 3,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Umfragen zuweisen",
+								"icon": "sap-icon://visits",
+								"targetURL": "#Action-toapp_ask_userSurvey"
+							}
+						}, {
+							"id": "toapp_ask_survey",
+							"title": "Deine Umfragen",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_02",
+								"title": "Deine Umfragen",
+								"info": "Deine Umfragen erledigen",
+								"infoState": "Positive",
+								"numberValue": 4,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Deine Umfragen erledigen",
+								"icon": "sap-icon://survey",
+								"targetURL": "#Action-toapp_ask_survey"
+							}
+						}, {
+							"id": "toapp_ask_statistic",
+							"title": "Statistiken",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_03",
+								"title": "Statistiken",
+								"info": "Statistiken der Ergebnisse",
+								"infoState": "Positive",
+								"numberValue": 2,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Tabellen and Statistiken",
+								"icon": "sap-icon://column-chart-dual-axis",
+								"targetURL": "#Action-toapp_ask_statistic"
+							}
+						}, {
+							"id": "toappnothing",
+							"title": "Brauchen Sie Unterstützung?",
+							"size": "1x2",
+							"tileType": "sap.ushell.ui.tile.ImageTile",
+							"properties": {
+								"chipId": "catalogTile_04",
+								"title": "Brauchen Sie Unterstützung?",
+								"info": "",
+								"infoState": "Positive",
+								"highlightTerms": "",
+								"icon": "",
+								"subtitle": "Kontaktieren Sie uns über info@mjzsoft.com",
+								"targetURL": "https://www.mjzsoft.com/contact/",
+								"imageSource": "./images/mjzsoft.jpg"
+							}
+						}]
+					}],
+					"groups": [{
+						"id": "main",
+						"title": "main",
+						"isPreset": true,
+						"isVisible": true,
+						"isGroupLocked": false,
+						"tiles": []
+					}, {
+						"id": "ask_group",
+						"title": "Mjzsoft Ask",
+						"isPreset": true,
+						"isVisible": true,
+						"isGroupLocked": false,
+						"tiles": [{
+							"id": "toapp_ask_builder",
+							"title": "Fragebogen-Builder",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_00",
+								"title": "Fragebogen-Builder",
+								"info": "Umfragen",
+								"infoState": "Positive",
+								"numberValue": 1,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Umfragen erstellen",
+								"icon": "sap-icon://attachment-text-file",
+								"targetURL": "#Action-toapp_ask_builder"
+							}
+						}, {
+							"id": "toapp_ask_userSurvey",
+							"title": "Teilnehmer Umfragen",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_01",
+								"title": "Teilnehmer Umfragen",
+								"info": "Umfragen einem Benutzer zuweisen",
+								"infoState": "Positive",
+								"numberValue": 3,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Umfragen zuweisen",
+								"icon": "sap-icon://visits",
+								"targetURL": "#Action-toapp_ask_userSurvey"
+							}
+						}, {
+							"id": "toapp_ask_survey",
+							"title": "Deine Umfragen",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_02",
+								"title": "Deine Umfragen",
+								"info": "Deine Umfragen erledigen",
+								"infoState": "Positive",
+								"numberValue": 4,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Deine Umfragen erledigen",
+								"icon": "sap-icon://survey",
+								"targetURL": "#Action-toapp_ask_survey"
+							}
+						}, {
+							"id": "toapp_ask_statistic",
+							"title": "Statistiken",
+							"size": "1x1",
+							"tileType": "sap.ushell.ui.tile.DynamicTile",
+							"properties": {
+								"chipId": "catalogTile_03",
+								"title": "Statistiken",
+								"info": "Statistiken der Ergebnisse",
+								"infoState": "Positive",
+								"numberValue": 2,
+								"numberDigits": "2",
+								"numberFactor": "",
+								"numberState": "Positive",
+								"numberUnit": "",
+								"subtitle": "Tabellen and Statistiken",
+								"icon": "sap-icon://column-chart-dual-axis",
+								"targetURL": "#Action-toapp_ask_statistic"
+							}
+						}]
+					}, {
+						"id": "news_group",
+						"title": "News feed",
+						"isPreset": true,
+						"isVisible": true,
+						"isGroupLocked": false,
+						"tiles": [{
+							"id": "toappnothing",
+							"title": "Brauchen Sie Unterstützung?",
+							"size": "1x2",
+							"tileType": "sap.ushell.ui.tile.ImageTile",
+							"properties": {
+								"title": "Brauchen Sie Unterstützung?",
+								"info": "",
+								"infoState": "Positive",
+								"highlightTerms": "",
+								"icon": "",
+								"subtitle": "Kontaktieren Sie uns über info@mjzsoft.com",
+								"targetURL": "https://www.mjzsoft.com/contact/",
+								"imageSource": "./images/mjzsoft.jpg"
+							}
+						}]
+					}]
+				}
+			}
+		},
+		"NavTargetResolution": {
+			"config": {
+				"enableClientSideTargetResolution": true
+			}
+		},
+		"ClientSideTargetResolution": {
+			"adapter": {
+				"config": {
+					"inbounds": {
+						"actionToapp_ask_builder": {
+							"semanticObject": "Action",
+							"action": "toapp_ask_builder",
+							"title": "Untertitel 1",
+							"signature": {
+								"parameters": {},
+								"additionalParameters": "allowed"
+							},
+							"resolutionResult": {
+								"applicationType": "SAPUI5",
+								"additionalInformation": "SAPUI5.Component=com.mjzsoft.QuestionnaireBuilder",
+								"url": "./dists/AppSample1"
+							}
+						},
+						"actionToapp_ask_statistic": {
+							"semanticObject": "Action",
+							"action": "toapp_ask_statistic",
+							"title": "Untertitel 2",
+							"signature": {
+								"parameters": {},
+								"additionalParameters": "allowed"
+							},
+							"resolutionResult": {
+								"applicationType": "SAPUI5",
+								"additionalInformation": "SAPUI5.Component=com.mjzsoft.QuestionnaireStatistics",
+								"url": "./dists/AppSample2"
+							}
+						},
+						"actionToapp_ask_userSurvey": {
+							"semanticObject": "Action",
+							"action": "toapp_ask_userSurvey",
+							"title": "Untertitel 3",
+							"signature": {
+								"parameters": {},
+								"additionalParameters": "allowed"
+							},
+							"resolutionResult": {
+								"applicationType": "SAPUI5",
+								"additionalInformation": "SAPUI5.Component=com.mjzsoft.UserSurveys",
+								"url": "./dists/AppSample3"
+							}
+						},
+						"actionToapp_ask_survey": {
+							"semanticObject": "Action",
+							"action": "toapp_ask_survey",
+							"title": "Untertitel 4",
+							"signature": {
+								"parameters": {},
+								"additionalParameters": "allowed"
+							},
+							"resolutionResult": {
+								"applicationType": "SAPUI5",
+								"additionalInformation": "SAPUI5.Component=com.mjzsoft.Survey",
+								"url": "./dists/AppSample4"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

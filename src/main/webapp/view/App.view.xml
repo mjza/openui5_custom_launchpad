@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="com.mjzsoft.Mjzsoft0Launchpad.controller.App" displayBlock="true" title="{i18n>title}"
+beforeRendering="onBeforeRendering" afterRendering="onAfterRendering">
+	<App id="app" busy="{lappView>/busy}" busyIndicatorDelay="{lappView>/delay}" navigate="onNavigate" afterNavigate="onAfterNavigate">
+		<pages>
+			<Page id="busy" backgroundDesign="Transparent" enableScrolling="false" showFooter="false" showHeader="false" showSubHeader="false" class="mjzsoftSandbox"/>
+		</pages>
+	</App>
+</mvc:View>

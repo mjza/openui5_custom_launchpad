@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View controllerName="com.mjzsoft.UserSurveys.controller.DetailObjectNotFound" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<MessagePage id="page" title="{i18n>detailTitle}" text="{i18n>noObjectFoundText}" icon="sap-icon://product" description=""/>
+</mvc:View>

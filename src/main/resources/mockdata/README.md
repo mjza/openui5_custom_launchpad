@@ -1,0 +1,1 @@
+In the `mockdata` file don't use the `xId` pattern for foreign keys. Please use the names that we have `set` functions for them. For example instead of `iconId` use `icon`, as we have `setIcon` function in the JPA models. We don't have access to map file hier.  

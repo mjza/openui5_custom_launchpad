@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	controllerName="com.mjzsoft.Mjzsoft0Launchpad.controller.ErrorSuccess" displayBlock="true">
+	<Page showNavButton="false" showSubHeader="false" class="success-page-backGround" enableScrolling="false" showHeader="false">
+		<content>
+			<VBox width="100%" direction="Column" fitContainer="true" justifyContent="Center" alignContent="Center">
+				<items>
+					<HBox width="100%" justifyContent="Center">
+						<items>
+							<f:Form editable="true">
+								<f:toolbar>
+									<Toolbar design="Transparent" style="Clear">
+										<content>
+											<ToolbarSpacer/>
+											<core:Icon src="sap-icon://accept" color="Positive" size="3em"/>
+											<ToolbarSpacer/>
+										</content>
+									</Toolbar>
+								</f:toolbar>
+								<f:formContainers>
+									<f:FormContainer>
+										<f:formElements>
+											<f:FormElement>
+												<f:fields>
+													<MessageStrip visible="true" text="{i18n>success_emailVerificationSuccessed}" showIcon="true" showCloseButton="false" type="Success"/>
+												</f:fields>
+											</f:FormElement>
+											<f:FormElement>
+												<f:fields>
+													<Button type="Emphasized" text="{i18n>success_goBackToLoginPage}" press="onNavToLoginButtonPress" width="100%" icon="sap-icon://arrow-left"/>
+												</f:fields>
+											</f:FormElement>
+										</f:formElements>
+									</f:FormContainer>
+								</f:formContainers>
+								<f:layout>
+									<f:ResponsiveGridLayout/>
+								</f:layout>
+							</f:Form>
+						</items>
+					</HBox>
+				</items>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

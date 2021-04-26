@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog noDataText="{i18n>noRegexExist}" title="{i18n>regexDialogTitle}" liveChange=".onRegexDialogLiveSearch" draggable="true"
+		search=".onRegexDialogSearch" confirm=".onRegexDialogClose" cancel=".onRegexDialogClose" items="{ path: '/RegexSet' }">
+		<StandardListItem title="{Name}" description="{Expression}" icon="sap-icon://bbyd-active-sales" iconDensityAware="false" iconInset="false"
+			type="Active"/>
+	</SelectDialog>
+</core:FragmentDefinition>

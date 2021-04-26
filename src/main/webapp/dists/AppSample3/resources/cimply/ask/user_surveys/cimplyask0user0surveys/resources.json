@@ -1,0 +1,176 @@
+{
+    "resources": [
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/images/Person.png"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/js/jwtAuthApp.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/utils/Utils.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/model/models.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/model/individualFormatter.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/model/formatter.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/manifest.json"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/NotFound.controller.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/Master.controller.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/ListSelector.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/ErrorHandler.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/DetailObjectNotFound.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/DetailObjectNotFound.controller.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/Detail.controller.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/BaseController.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/App.controller.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/conf/env.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/Component.js"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/manifest-bundle.zip"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/model/individualFormatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/model/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/js/jwtAuthApp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/NotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/Master-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/ListSelector-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/ErrorHandler-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/DetailObjectNotFound-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/DetailObjectNotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/Detail-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/conf/env-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/utils/Utils-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/view/ViewSettingsDialog.fragment.xml"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/view/NotFound.view.xml"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/view/Master.view.xml"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/view/DialogSurveySelector.fragment.xml"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/view/DetailObjectNotFound.view.xml"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/view/Detail.view.xml"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/view/App.view.xml"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "../../../../com/mjzsoft/UserSurveys/css/style.css"
+        }
+    ]
+}

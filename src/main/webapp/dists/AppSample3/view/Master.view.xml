@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<mvc:View controllerName="com.mjzsoft.UserSurveys.controller.Master" xmlns="sap.m" xmlns:semantic="sap.f.semantic" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core">
+	<semantic:SemanticPage id="masterPage" preserveHeaderStateOnScroll="true" toggleHeaderOnTitleClick="false" class="sapUiNoContentPadding">
+		<semantic:titleHeading>
+			<Title id="masterPageTitle" text="{masterView>/title}" level="H2"/>
+		</semantic:titleHeading>
+		<semantic:content>
+			<!-- For client side filtering add this to the items attribute: parameters: {operationMode: 'Client'}}" -->
+			<List id="list" width="auto" items="{ path: '/UserSet', sorter: { path: 'Id', descending: false }, parameters: {expand: 'Surveys,Surveys/Form'} }"
+				mode="SingleSelectMaster" busyIndicatorDelay="{masterView>/delay}" noDataText="{i18n>masterListNoDataText}" growing="true"
+				growingScrollToLoad="true" updateFinished=".onUpdateFinished" selectionChange=".onSelectionChange">
+				<headerToolbar>
+					<OverflowToolbar>
+						<SearchField id="searchField" showRefreshButton="true" tooltip="{i18n>masterSearchTooltip}" search=".onSearch" liveChange="liveSearch"
+							width="auto">
+							<layoutData>
+								<OverflowToolbarLayoutData minWidth="150px" maxWidth="240px" shrinkable="true" priority="NeverOverflow"/>
+							</layoutData>
+						</SearchField>
+						<ToolbarSpacer/>
+						<Button id="sortButton" press=".onOpenViewSettings" icon="sap-icon://sort" type="Transparent"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				<items>
+					<CustomListItem type="Navigation" press=".onSelectionChange">
+						<HBox alignItems="Center" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+							<Image height="40px" width="40px" src="{path: 'PhotoContent', formatter: '.formatter.icon'}"/>
+							<VBox class="sapUiSmallMarginBegin" width="100%">
+								<Label text="{FirstName} {LastName}"/>
+								<Label text="{i18n>labelId} {Id}"/>
+							</VBox>
+							<Title class="sapUiSmallMarginEnd" text="{ path:'Surveys', formatter:'com.mjzsoft.UserSurveys.model.individualFormatter.formSurveyCounter' }"/>
+						</HBox>
+					</CustomListItem>
+				</items>
+			</List>
+		</semantic:content>
+	</semantic:SemanticPage>
+</mvc:View>

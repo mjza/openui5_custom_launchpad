@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog title="{i18n>home_passwordUpdateDialogTitle}" busyIndicatorDelay="1" contentWidth="400px">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm id="SimpleFormDisplay354wide" editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+					labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+					singleContainerFullSize="false">
+					<f:content>
+						<MessageStrip visible="{= ${launchpadView>/error} !== null }" text="{launchpadView>/error}" showIcon="true" showCloseButton="true"
+							type="Error" close="onErrorStripClosed"/>
+						<MessageStrip visible="true" text="{i18n>home_updatePasswordInfo}" showIcon="true" showCloseButton="false" customIcon="sap-icon://two-keys"/>
+						<Label text="{i18n>home_oldPassword}" design="Bold"/>
+						<Input id="oldPassInput" type="Password"
+							value="{ path:'launchpadView>/oldPass', type: 'sap.ui.model.type.String', constraints : { minLength : 1 }}"
+							showSuggestion="false" fieldWidth="100%" required="true" fieldGroupIds="UpdatePass" submit=".dialogPassUpdateSubmitBtnPress"/>
+						<Label text="{i18n>home_newPassword}" design="Bold"/>
+						<Input id="newPassInput" type="Password"
+							value="{ path:'launchpadView>/newPass', type: 'sap.ui.model.type.String', constraints : { search: '^(?=.*[a-zöäüß])(?=.*[A-ZÖÄÜ])(?=.*\\d)(?!.*\\s)(?=.*[#$@!%*?~&amp;])[A-Za-zöäüßÖÄÜ\\d#$@!%*?~&amp;]{8,30}$' }}"
+							valueStateText="{i18n>login_passwordValueState}" showSuggestion="false" fieldWidth="100%" required="true" fieldGroupIds="UpdatePass"
+							submit=".dialogPassUpdateSubmitBtnPress"/>
+						<Label text="{i18n>home_confirmNewPassword}" design="Bold"/>
+						<Input id="confirmNewPassInput" type="Password"
+							value="{ path:'launchpadView>/confirmNewPass', type: 'sap.ui.model.type.String', constraints : { search: '^(?=.*[a-zöäüß])(?=.*[A-ZÖÄÜ])(?=.*\\d)(?!.*\\s)(?=.*[#$@!%*?~&amp;])[A-Za-zöäüßÖÄÜ\\d#$@!%*?~&amp;]{8,30}$' }}"
+							valueStateText="{i18n>login_passwordValueState}" showSuggestion="false" fieldWidth="100%" required="true" fieldGroupIds="UpdatePass"
+							change="onConfirmPassChanged" submit=".dialogPassUpdateSubmitBtnPress"/>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<beginButton>
+			<Button xmlns="sap.m" id="submitBtn" icon="sap-icon://paper-plane" type="Accept" tooltip="{i18n>login_resetButton}"
+				press=".dialogPassUpdateSubmitBtnPress"/>
+		</beginButton>
+		<endButton>
+			<Button icon="sap-icon://sys-cancel-2" id="cancelBtn" type="Reject" tooltip="{i18n>login_rejectButton}" press=".dialogCloseBtnPress"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

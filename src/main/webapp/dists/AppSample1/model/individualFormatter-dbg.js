@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/model/Filter","sap/ui/model/FilterOperator"],function(e,t){"use strict";return{formQuestionsCounter:function(n){var r=this.getParent();var i=r.getBindingContext().getPath()+"/Questions";var u=r.getModel().bindList(i,null,null,[new e({path:"Deleted",operator:t.EQ,value1:false})]);return u.getLength()}}},true);

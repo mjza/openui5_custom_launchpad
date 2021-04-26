@@ -1,0 +1,1 @@
+[Guide for Sandbox config file](https://help.sap.com/doc/saphelp_nw751abap/7.51.0/de-DE/c9/1d091226804dd2b727de4375f0cf1f/content.htm?loaded_from_frameset=true)
